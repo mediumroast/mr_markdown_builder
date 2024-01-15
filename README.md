@@ -1,13 +1,9 @@
-# Markdown builder for Node 
-[![Build Status](https://api.travis-ci.org/30-seconds/markdown-builder.svg?branch=master)](https://travis-ci.org/30-seconds/markdown-builder)
-![npm bundle size (minified + gzip)](https://img.shields.io/bundlephobia/minzip/markdown-builder.svg)
-![npm](https://img.shields.io/npm/v/markdown-builder.svg)
-
-> Official README builder for the 30-seconds projects.
+# mr_markdown_builder
+A fork of the venerable yet archived version of markdown-builder
 
 ## Usage
 ```bash
-npm install --save markdown-builder
+npm install --save mr_markdown_builder
 ```
 
 Using `markdown-builder` is quite easy:
@@ -17,9 +13,6 @@ const { headers } = markdown;
 
 headers.hX(3, '3rd Header') // ### 3rd Header
 ```
-
-## Example
-**Check out [30-seconds-of-code](https://github.com/Chalarangelo/30-seconds-of-code)'s READMEs, they are automatically generated using `markdown-builder`**
 
 ## API
 

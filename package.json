@@ -1,10 +1,10 @@
 {
-  "name": "markdown-builder",
+  "name": "mr_markdown_builder",
   "version": "0.8.9",
-  "description": "The next-gen markdown builder for node",
+  "description": "A fork of the famous markdown builder for node with enhancements.",
   "main": "lib/index.js",
   "repository": "https://github.com/flxwu/markdown-builder",
-  "author": "Felix Wu",
+  "author": "Michael Hay",
   "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.26.0",

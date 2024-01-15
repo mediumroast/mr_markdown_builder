@@ -1,15 +1,15 @@
 # mr_markdown_builder
-A fork of the venerable yet archived version of markdown-builder
+A fork of the venerable yet archived version of markdown-builder with improvements such as  tables, quotes, task lists, inline code blocks, long code blocks
 
 ## Usage
 ```bash
 npm install --save mr_markdown_builder
 ```
 
-Using `markdown-builder` is quite easy:
+Using `mr_markdown_builder` is quite easy:
 ```js
-const markdown = require('markdown-builder');
-const { headers } = markdown;
+const markdown = require('mr_markdown_builder')
+const { headers } = markdown
 
 headers.hX(3, '3rd Header') // ### 3rd Header
 ```
@@ -20,7 +20,7 @@ headers.hX(3, '3rd Header') // ### 3rd Header
 Use the `h1`,`h2`,`h3`,`h4`,`h5`,`h6` or `hX` to generate a markdown header. Calling `hX` with a level above `6` returns a `h6` Header.
 
 ```js
-const markdown = require('markdown-builder')
+const markdown = require('mr_markdown_builder')
 const { headers } = markdown
 
 headers.h1('1st Header') // # 1st Header
@@ -31,17 +31,19 @@ headers.hX(5, '5th Header using hX') // ##### 5th Header using hX
 
 ### Emphasis
 ```js
-const markdown = require('markdown-builder')
+const markdown = require('mr_markdown_builder')
 const { emphasis } = markdown
 
 emphasis.b('bold text')
 emphasis.i('italic text')
 emphasis.s('strikethrough text')
+emphasis.ic('inline code block text')
+emphasis.cb('long code block text')
 ```
 
 ### Lists
 ```js
-const markdown = require('markdown-builder')
+const markdown = require('mr_markdown_builder')
 const { lists } = markdown
 
 let a = ['Item 1', 'Item 2']
@@ -56,12 +58,16 @@ lists.ol(a, (item) => item.toUpperCase()) // use callbacks to alter each item
 // unordered List
 lists.ul(a)
 lists.ul(a, (item) => item.toUpperCase())
+
+// task list
+list.tl(a)
+lists.tl(a, (item) => item.toUpperCase())
 ```
 
 ### Miscellaneous
 
 ```js
-const markdown = require('markdown-builder')
+const markdown = require('mr_markdown_builder')
 const { misc } = markdown
 
 // Images
@@ -80,6 +86,9 @@ misc.link('Github', 'https://github.com/flxwu')
 
 // horizontal rule
 misc.hr()
+
+// Quote
+misc.quote('A quote')
 
 ```
 

@@ -1,18 +1,14 @@
 {
   "name": "mr_markdown_builder",
-  "version": "0.8.9",
+  "version": "0.9.0",
   "description": "A fork of the famous markdown builder for node with enhancements.",
-  "main": "lib/index.js",
-  "repository": "https://github.com/flxwu/markdown-builder",
-  "author": "Michael Hay",
-  "license": "MIT",
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-plugin-module-resolver": "^3.1.1",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-flow": "^6.23.0",
-    "flow-bin": "^0.77.0",
-    "jest": "^23.4.2"
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mediumroast/mr_markdown_builder.git"
   },
   "keywords": [
     "markdown",
@@ -21,37 +17,14 @@
     "package",
     "node",
     "md",
-    "parser"
+    "parser",
+    "README.md",
+    "GitHub Markdown"
   ],
-  "scripts": {
-    "build": "babel src/ -d lib/",
-    "test": "jest",
-    "flow": "flow check"
+  "author": "Michael Hay",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mediumroast/mr_markdown_builder/issues"
   },
-  "jest": {
-    "verbose": true,
-    "testEnvironment": "node",
-    "transform": {
-      "^.+\\.js$": "babel-jest"
-    },
-    "globals": {
-      "NODE_ENV": "test"
-    },
-    "moduleFileExtensions": [
-      "js"
-    ],
-    "moduleDirectories": [
-      "node_modules",
-      "src/components",
-      "src/util"
-    ]
-  },
-  "dependencies": {
-    "husky": "^1.0.0-rc.14"
-  },
-  "husky": {
-    "hooks": {
-      "pre-push": "yarn flow && yarn test"
-    }
-  }
+  "homepage": "https://github.com/mediumroast/mr_markdown_builder#readme"
 }

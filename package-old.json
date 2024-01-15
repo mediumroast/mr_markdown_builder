@@ -1,0 +1,30 @@
+{
+  "name": "mr_markdown_builder",
+  "version": "0.9.0",
+  "description": "A fork of the famous markdown builder for node with enhancements.",
+  "main": "index.js",
+  "repository": "https://github.com/flxwu/markdown-builder",
+  "author": "Michael Hay",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-module-resolver": "^3.1.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-flow": "^6.23.0"
+  },
+  "keywords": [
+    "markdown",
+    "builder",
+    "generator",
+    "package",
+    "node",
+    "md",
+    "parser",
+    "README.md",
+    "GitHub Markdown"
+  ],
+  "scripts": {
+  },
+  "dependencies": {
+  }
+}

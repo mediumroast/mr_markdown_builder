@@ -1,11 +1,7 @@
-import * as headers from './headers';
-import * as emphasis from './emphasis';
-import * as lists from './lists';
-import * as misc from './misc';
+import * as headers from './headers'
+import * as emphasis from './emphasis'
+import * as lists from './lists'
+import * as misc from './misc'
+import * as tables from './tables'
 
-module.exports = {
-  headers,
-  emphasis,
-  lists,
-  misc
-};
+export { headers, emphasis, lists, misc }

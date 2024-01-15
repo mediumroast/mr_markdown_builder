@@ -1,3 +1,3 @@
-import * as markdown from './components';
+import * as markdown from './components'
 
-module.exports = markdown;
+export default markdown

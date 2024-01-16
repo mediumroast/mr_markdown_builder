@@ -31,6 +31,8 @@ const createCompanyFiles = (companies) => {
     companyFile += "\n"
     // Add the company badges
     companyFile += createBadges(company)
+    // Add a line break
+    companyFile += "\n"
     // Add the company description
     companyFile += `${mrMarkdownBuilder.b('Description:')} ${company.description}`
     // Add a line break

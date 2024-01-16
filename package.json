@@ -26,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/mediumroast/mr_markdown_builder/issues"
   },
-  "homepage": "https://github.com/mediumroast/mr_markdown_builder#readme"
+  "homepage": "https://github.com/mediumroast/mr_markdown_builder#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
 }

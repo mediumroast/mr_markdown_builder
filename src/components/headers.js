@@ -2,7 +2,8 @@
  * Markdown Header utilities
  */
 
-import { HEADER_PREFIX, withPrefix, SECTION_LINE_BREAK } from '../util'
+const { HEADER_PREFIX, SECTION_LINE_BREAK } = require('../util/constants')
+const withPrefix = require('../util/helpers').withPrefix
 
 /**
  * Header of specific level
@@ -21,4 +22,4 @@ const h4 = (text) => hX(4, text);
 const h5 = (text) => hX(5, text);
 const h6 = (text) => hX(6, text);
 
-export { hX, h1, h2, h3, h4, h5, h6 }
+module.exports = { h1, h2, h3, h4, h5, h6 }

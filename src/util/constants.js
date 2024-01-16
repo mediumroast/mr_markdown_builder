@@ -25,7 +25,7 @@ const TABLE_HEADER_SEP = '|---|'
 const INLINE_CODE = '`'
 const CODE_BLOCK = '```'
 
-export {
+module.exports = {
   HEADER_PREFIX,
   EMPHASIS_ITALICS,
   EMPHASIS_BOLD,

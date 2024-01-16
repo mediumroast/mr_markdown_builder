@@ -1,7 +1,8 @@
-import * as headers from './headers'
-import * as emphasis from './emphasis'
-import * as lists from './lists'
-import * as misc from './misc'
-import * as tables from './tables'
+// Desc: index file for components
+const headers = require('./headers')
+const emphasis = require('./emphasis')
+const lists = require('./lists')
+const misc = require('./misc')
+const tables = require('./tables')
 
-export { headers, emphasis, lists, misc }
+module.exports = { ...headers, ...emphasis, ...lists, ...misc, ...tables }

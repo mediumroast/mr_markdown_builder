@@ -1,6 +1,6 @@
 
-# <img src="https://www.atlassian.com/apple-touch-icon.png" alt="Atlassian Corp Logo" height="50px" title="Atlassian Corp" /> Atlassian Corp
-
----
+# <img src="https://www.atlassian.com/apple-touch-icon.png" alt="Atlassian Corp Logo" height="25px" title="Atlassian Corp" /> Atlassian Corp
 
 **Description:** Atlassian Corporation () is an Australian software company that develops products for software developers, and project managers among other groups. The company is domiciled in Delaware, with global headquarters in Sydney, Australia, and US headquarters in San Francisco.  In the fourth fiscal quarter of 2022, Atlassian reported serving 242,623 customers in over 190 countries, with 10 million monthly active users. As of June 2022, the company had 8,813 employees across 13 countries.
+|![Company Role](https://img.shields.io/badge/Company Role-undefined-blue?style=for-the-badge)|![Company Type](https://img.shields.io/badge/Company Type-Public company-blue?style=for-the-badge)|![Region](https://img.shields.io/badge/Region-AMER-blue?style=for-the-badge)|
+|![Creation Date](https://img.shields.io/badge/Creation Date-2024-01-14T00:18:25.693Z-blue?style=for-the-badge)|![Modification Date](https://img.shields.io/badge/Modification Date-2024-01-14T00:18:25.693Z-blue?style=for-the-badge)|![Creator](https://img.shields.io/badge/Creator-miha42-github-blue?style=for-the-badge)|

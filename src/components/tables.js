@@ -5,7 +5,7 @@ const { TABLE_CELL_DIV, TABLE_HEADER_SEP, SECTION_LINE_BREAK } = require('../uti
 /**
  * @function tableRow
  * @description Creates a table row based upon an array of cells
- * @param {string[]} cells - array of cells
+ * @param {Array[]} cells - array of cells
  * @returns {string} table row
  */
 const tableRow = (cells) => {

@@ -1,9 +1,10 @@
 /**
  * Emphasis and code formatting components
 */
+// Desc: emphasis.js
+const surround = require('../util/helpers').surround
+const { EMPHASIS_ITALICS, EMPHASIS_BOLD, EMPHASIS_STRIKETHROUGH, INLINE_CODE, CODE_BLOCK } = require('../util/constants')
 
-import { surround } from '../util';
-import { EMPHASIS_ITALICS, EMPHASIS_BOLD, EMPHASIS_STRIKETHROUGH, INLINE_CODE, CODE_BLOCK } from '../util/constants'
 
 /**
  * Produces italic text
@@ -36,4 +37,4 @@ const ic = (text) => surround(INLINE_CODE, text)
  */
 const cb = (text) => surround(CODE_BLOCK, text)
 
-export { i, b, s, ic, cb }
+module.exports = { i, b, s, ic, cb }

@@ -1,5 +1,11 @@
 # mr_markdown_builder
-A fork of the venerable yet archived version of markdown-builder with improvements such as  tables, quotes, task lists, inline code blocks, long code blocks
+A fork of the venerable yet archived version of markdown-builder with improvements including:
+- Tables
+- Quotes
+- Task lists
+- Inline code blocks 
+- Long code blocks
+- Badges from shields.io
 
 ## Usage
 ```bash

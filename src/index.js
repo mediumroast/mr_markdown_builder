@@ -1,3 +1,3 @@
-import * as markdown from './components'
+const markdown = require('./components')
 
-export default markdown
+module.exports = markdown

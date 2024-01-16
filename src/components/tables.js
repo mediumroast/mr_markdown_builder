@@ -1,6 +1,6 @@
 // Import constants and helpers from the util folder
-import { surround } from '../util';
-import { TABLE_CELL_DIV, TABLE_HEADER_SEP, SECTION_LINE_BREAK } from '../util/constants'
+const { surround } = require('../util')
+const { TABLE_CELL_DIV, TABLE_HEADER_SEP, SECTION_LINE_BREAK } = require('../util/constants')
 
 /**
  * @function tableRow
@@ -28,4 +28,4 @@ const tableHeader = (headerCells) => {
 }
 
 // Export the tableRow and tableHeader functions
-export { tableRow, tableHeader }
+module.exports = { tableRow, tableHeader }

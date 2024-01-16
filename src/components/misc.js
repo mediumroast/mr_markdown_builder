@@ -2,7 +2,9 @@
  * Misc
  */
 
-import { HORIZONTAL_RULE, SECTION_LINE_BREAK, QUOTE, surround, withPrefix } from '../util'
+const { withPrefix, surround } = require('../util/helpers')
+const {HORIZONTAL_RULE, SECTION_LINE_BREAK, QUOTE} = require('../util/constants')
+
 
 const hr = () => surround(SECTION_LINE_BREAK, HORIZONTAL_RULE)
 
@@ -42,4 +44,10 @@ const image = (alt, url, title = '') =>
 // Create quote function
 const quote = (text) => withPrefix(QUOTE, text) 
 
-export { hr, collapsible, anchor, link, image, quote }
+// Create a static badge function
+const badge = (label, message, color='blue', style='?style=for-the-badge') => {
+  const url = `https://img.shields.io/badge/${label}-${message}-${color}${style}`
+  return image(label, url)
+}
+
+module.exports = { hr, collapsible, anchor, link, image, quote, badge }

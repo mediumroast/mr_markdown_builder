@@ -2,7 +2,8 @@
  * Markdown Lists utilities
  */
 
-import { UNORDERED_LIST_PREFIX, TASK_LIST_PREFIX, withPrefix } from '../util';
+const { withPrefix } = require('../util/helpers')
+const { UNORDERED_LIST_PREFIX, TASK_LIST_PREFIX } = require('../util/constants')
 
 const ul = (items, callback) => {
   let list = ''
@@ -45,4 +46,4 @@ const ol = (items, callback) => {
   return list
 }
 
-export { ul, ol }
+module.exports = { ul, ol }

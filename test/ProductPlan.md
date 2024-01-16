@@ -1,5 +1,5 @@
 
-# <img src="50" alt="ProductPlan Logo" height="https://www.productplan.com/uploads/PP-favicon.pngpx" title="ProductPlan" /> ProductPlan
+# <img src="https://www.productplan.com/uploads/PP-favicon.png" alt="ProductPlan Logo" height="50px" title="ProductPlan" /> ProductPlan
 
 ---
 

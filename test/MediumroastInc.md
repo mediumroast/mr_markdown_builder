@@ -1,5 +1,5 @@
 
-# <img src="50" alt="Mediumroast, Inc. Logo" height="https://www.mediumroast.io/favicon.pngpx" title="Mediumroast, Inc." /> Mediumroast, Inc.
+# <img src="https://www.mediumroast.io/favicon.png" alt="Mediumroast, Inc. Logo" height="50px" title="Mediumroast, Inc." /> Mediumroast, Inc.
 
 ---
 

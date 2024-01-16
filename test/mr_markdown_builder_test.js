@@ -12,9 +12,9 @@ const createCompanyFiles = (companies) => {
     // Get the name of the company and remove spaces, commas, periods, question marks, and exclamation points
     const companyFileName = company.name.replace(/[\s,.\?!]/g, '')
     // Using the emphasis module create a bolded version of the string "Company Name:"
-    const boldedCompanyTitle = mrMarkdownBuilder.b('Name:')
+    const companyLogo = mrMarkdownBuilder.image(`${company.name} Logo`, company.logo_url, company.name)
     // Call the h1 method from the headers module
-    let companyFile = mrMarkdownBuilder.h1(`${boldedCompanyTitle} ${company.name}`)
+    let companyFile = mrMarkdownBuilder.h1(`${companyLogo} ${company.name}`)
     // Add a horizontal rule
     companyFile += mrMarkdownBuilder.hr()
     // Add a line break

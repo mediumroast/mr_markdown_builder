@@ -41,6 +41,10 @@ const link = (title, url) => {
 const image = (alt, url, title = '') =>
   `![${alt}](${url}${title !== '' ? ` "${title}"` : ''})`
 
+// Create a function, using HTML, that will take siz in px and create an image with the specified size
+const imageWithSize = (alt, url, size, title = '') =>
+  `<img src="${url}" alt="${alt}" height="${size}px"${title !== '' ? ` title="${title}"` : ''} />`
+
 // Create quote function
 const quote = (text) => withPrefix(QUOTE, text) 
 
@@ -50,4 +54,4 @@ const badge = (label, message, color='blue', style='?style=for-the-badge') => {
   return image(label, url)
 }
 
-module.exports = { hr, collapsible, anchor, link, image, quote, badge }
+module.exports = { hr, collapsible, anchor, link, image, quote, badge, imageWithSize }

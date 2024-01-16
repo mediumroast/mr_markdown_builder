@@ -1,5 +1,5 @@
 
-# ![ProductPlan Logo](https://www.productplan.com/uploads/PP-favicon.png "ProductPlan") ProductPlan
+# <img src="50" alt="ProductPlan Logo" height="https://www.productplan.com/uploads/PP-favicon.pngpx" title="ProductPlan" /> ProductPlan
 
 ---
 

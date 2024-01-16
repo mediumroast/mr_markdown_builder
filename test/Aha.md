@@ -1,5 +1,5 @@
 
-# ![Aha! Logo](https://www.aha.io/icons/icon-512x512.png?v=4b9222967840d785d04c63c361279f97 "Aha!") Aha!
+# <img src="50" alt="Aha! Logo" height="https://www.aha.io/icons/icon-512x512.png?v=4b9222967840d785d04c63c361279f97px" title="Aha!" /> Aha!
 
 ---
 

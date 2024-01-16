@@ -1,5 +1,5 @@
 
-# ![Atlassian Corp Logo](https://www.atlassian.com/apple-touch-icon.png "Atlassian Corp") Atlassian Corp
+# <img src="50" alt="Atlassian Corp Logo" height="https://www.atlassian.com/apple-touch-icon.pngpx" title="Atlassian Corp" /> Atlassian Corp
 
 ---
 

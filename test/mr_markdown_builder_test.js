@@ -12,7 +12,7 @@ const createBadges = (company) => {
         mrMarkdownBuilder.badge(encodeURIComponent('Role'), company.role),
         mrMarkdownBuilder.badge(encodeURIComponent('Type'), encodeURIComponent(company.company_type)),
         mrMarkdownBuilder.badge(encodeURIComponent('Region'), company.region),
-        mrMarkdownBuilder.badge(encodeURIComponent('Creator'), encodeURIComponent(company.creator))
+        mrMarkdownBuilder.badge(encodeURIComponent('Creator'), encodeURIComponent(company.creator_name))
     ]
     return "\n" + badgesRow.join(' ') + "\n"
 }

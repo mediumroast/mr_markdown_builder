@@ -13,16 +13,11 @@ const createBadges = (company) => {
     let badgesRow = [
         mrMarkdownBuilder.badge(encodeURIComponent('Company Role'), company.company_role),
         mrMarkdownBuilder.badge(encodeURIComponent('Company Type'), company.company_type),
-        mrMarkdownBuilder.badge(encodeURIComponent('Region'), company.region)
-    ]
-    badges += mrMarkdownBuilder.tableRow(badgesRow) + "\n"
-    // Create a badge for the modification date
-    badgesRow = [
-        mrMarkdownBuilder.badge(encodeURIComponent('Creation Date'), encodeURIComponent(company.creation_date)),
-        mrMarkdownBuilder.badge(encodeURIComponent('Modification Date'), encodeURIComponent(company.modification_date)),
+        mrMarkdownBuilder.badge(encodeURIComponent('Region'), company.region),
         mrMarkdownBuilder.badge(encodeURIComponent('Creator'), encodeURIComponent(company.creator))
     ]
     badges += mrMarkdownBuilder.tableRow(badgesRow) + "\n"
+
     // Return the badges
     return badges
 }

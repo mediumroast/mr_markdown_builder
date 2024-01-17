@@ -11,3 +11,5 @@
 | Website | Address | Maps Link |
 | --- | --- | --- |
 | https://www.mediumroast.io | 11909 Sunshine Peak Ct., San Diego, CA 92131, USA | https:// |
+
+| **Website** | https://www.mediumroast.io | **Address** | 11909 Sunshine Peak Ct., San Diego, CA 92131, USA | **Maps** | https:// |

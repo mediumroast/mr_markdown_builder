@@ -14,7 +14,7 @@ const createBadges = (company) => {
         mrMarkdownBuilder.badge(encodeURIComponent('Region'), company.region),
         mrMarkdownBuilder.badge(encodeURIComponent('Creator'), encodeURIComponent(company.creator_name))
     ]
-    return "\n" + badgesRow.join(' ') + "\n"
+    return "\n" + badgesRow.join('...') + "\n"
 }
 
 
@@ -35,6 +35,10 @@ const createCompanyFiles = (companies) => {
     companyFile += "\n"
     // Add the company description
     companyFile += `${mrMarkdownBuilder.b('Description:')} ${company.description}`
+    // Add a line break
+    companyFile += "\n"
+    // Add a horizontal rule
+    companyFile += mrMarkdownBuilder.hr()
     // Add a line break
     companyFile += "\n"
     

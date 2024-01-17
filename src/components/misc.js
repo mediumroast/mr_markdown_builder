@@ -5,7 +5,6 @@
 const { withPrefix, surround } = require('../util/helpers')
 const {HORIZONTAL_RULE, SECTION_LINE_BREAK, QUOTE} = require('../util/constants')
 
-
 const hr = () => surround(SECTION_LINE_BREAK, HORIZONTAL_RULE)
 
 const collapsible = (summary, content) =>

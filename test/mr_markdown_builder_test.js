@@ -14,7 +14,7 @@ const createBadges = (company) => {
         mrMarkdownBuilder.badge(encodeURIComponent('Region'), company.region),
         mrMarkdownBuilder.badge(encodeURIComponent('Creator'), encodeURIComponent(company.creator_name))
     ]
-    return "\n" + badgesRow.join('$~~~~$') + "\n"
+    return "\n" + badgesRow.join('&nbsp;') + "\n"
 }
 
 

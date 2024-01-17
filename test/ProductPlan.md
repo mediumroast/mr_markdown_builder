@@ -11,6 +11,6 @@
 
 ## Industry Details
 
-* **Industry** -> Computers and Computer Peripheral Equipment and Software (Code: 5045)
-* **Industry Group** -> Professional And Commercial Equipment And Supplies (Code: 504)
-* **Major Group** -> Wholesale Trade-durable Goods (Code: 50)
+* **Industry** &#8594; Computers and Computer Peripheral Equipment and Software (Code: 5045)
+* **Industry Group** &#8594; Professional And Commercial Equipment And Supplies (Code: 504)
+* **Major Group** &#8594; Wholesale Trade-durable Goods (Code: 50)

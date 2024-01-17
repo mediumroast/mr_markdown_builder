@@ -20,12 +20,12 @@ const createBadges = (company) => {
 // Create a function that takes the company object and returns a list of industry data from the company covering industry, industry_group_description, and major_group_description
 const createIndustryList = (company) => {
     const industryDataList = [
-        `**Industry Description**: ${company.industry} (Code: ${company.industry_code})`,
-        `**Industry Group Description**: ${company.industry_group_description} (Code: ${company.industry_group_code})`,
-        `**Major Group Description**: ${company.major_group_description} (Code: ${company.major_group_code})`
+        `**Industry **: ${company.industry} (Code: ${company.industry_code})`,
+        `**Industry Group**: ${company.industry_group_description} (Code: ${company.industry_group_code})`,
+        `**Major Group**: ${company.major_group_description} (Code: ${company.major_group_code})`
     ]
     // Create a list of industries
-    const industryList = mrMarkdownBuilder.ul(industryDataList)
+    const industryList = `${mrMarkdownBuilder.h2('Industry Details')}\n${mrMarkdownBuilder.ul(industryDataList)}`
     return industryList
 }
 

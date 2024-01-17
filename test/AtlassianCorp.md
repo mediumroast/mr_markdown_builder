@@ -8,6 +8,9 @@
 
 ---
 
-* **Industry Description**: Prepackaged Software (Code: 7372)
-* **Industry Group Description**: Computer Programming, Data Processing, And Other Computer Related Services (Code: 737)
-* **Major Group Description**: Business Services (Code: 73)
+
+## Industry Details
+
+* **Industry **: Prepackaged Software (Code: 7372)
+* **Industry Group**: Computer Programming, Data Processing, And Other Computer Related Services (Code: 737)
+* **Major Group**: Business Services (Code: 73)

@@ -14,7 +14,19 @@ const createBadges = (company) => {
         mrMarkdownBuilder.badge(encodeURIComponent('Region'), company.region),
         mrMarkdownBuilder.badge(encodeURIComponent('Creator'), encodeURIComponent(company.creator_name))
     ]
-    return "\n" + badgesRow.join('&nbsp;&nbsp;&nbsp;') + "\n"
+    return "\n" + badgesRow.join('&nbsp;&nbsp;&nbsp;&nbsp;') + "\n"
+}
+
+// Create a function that takes the company object and returns a list of industry data from the company covering industry, industry_group_description, and major_group_description
+const createIndustryList = (company) => {
+    const industryDataList = [
+        `**Industry Description**: ${company.industry} (Code: ${company.industry_code})`,
+        `**Industry Group Description**: ${company.industry_group_description} (Code: ${company.industry_group_code})`,
+        `**Major Group Description**: ${company.major_group_description} (Code: ${company.major_group_code})`
+    ]
+    // Create a list of industries
+    const industryList = mrMarkdownBuilder.ul(industryDataList)
+    return industryList
 }
 
 
@@ -41,7 +53,8 @@ const createCompanyFiles = (companies) => {
     companyFile += mrMarkdownBuilder.hr()
     // Add a line break
     companyFile += "\n"
-    
+    // Create the Industry List
+    companyFile += createIndustryList(company)
     
     // Write the file
     fs.writeFileSync(`./${companyFileName}.md`, companyFile)

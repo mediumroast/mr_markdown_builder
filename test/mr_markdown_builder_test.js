@@ -41,7 +41,7 @@ const createInteractionList = (company, interactions) => {
         return interactionLink
     })
     
-    return `${mrMarkdownBuilder.h2('Interactions')} \n ${mrMarkdownBuilder.ul[interactionList]}`
+    return `${mrMarkdownBuilder.h2('Interactions')} \n ${mrMarkdownBuilder.ul([interactionList])}`
 }
 
 

@@ -34,7 +34,7 @@ const link = (title, url) => {
   if (url === null) {
     url = anchor(title)
   }
-  return `[${title}](${url})`
+  return ` [${title}](${url}) `
 };
 
 const image = (alt, url, title = '') =>

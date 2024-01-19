@@ -17,4 +17,4 @@
 
 ## Interactions
  
- [How Product Managers Should Define Customer Personas | Aha! software](../../Interactions/How Product Managers Should Define Customer Personas | Aha! software.pdf)
+ undefined

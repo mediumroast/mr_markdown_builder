@@ -40,7 +40,8 @@ const createInteractionList = (company, interactions) => {
         const interactionLink = mrMarkdownBuilder.link(interaction.name, `../../${interaction.url}`)
         return interactionLink
     })
-    return `${mrMarkdownBuilder.h2('Interactions')} \n ${interactionList}`
+    
+    return `${mrMarkdownBuilder.h2('Interactions')} \n ${mrMarkdownBuilder.ul[interactionList]}`
 }
 
 

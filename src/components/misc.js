@@ -5,7 +5,6 @@
 const { withPrefix, surround } = require('../util/helpers')
 const {HORIZONTAL_RULE, SECTION_LINE_BREAK, QUOTE} = require('../util/constants')
 
-
 const hr = () => surround(SECTION_LINE_BREAK, HORIZONTAL_RULE)
 
 const collapsible = (summary, content) =>
@@ -35,11 +34,15 @@ const link = (title, url) => {
   if (url === null) {
     url = anchor(title)
   }
-  return `[${title}](${url})`
+  return ` [${title}](${url}) `
 };
 
 const image = (alt, url, title = '') =>
   `![${alt}](${url}${title !== '' ? ` "${title}"` : ''})`
+
+// Create a function, using HTML, that will take siz in px and create an image with the specified size
+const imageWithSize = (alt, url, size, title = '') =>
+  `<img src="${url}" alt="${alt}" height="${size}px"${title !== '' ? ` title="${title}"` : ''} />`
 
 // Create quote function
 const quote = (text) => withPrefix(QUOTE, text) 
@@ -50,4 +53,4 @@ const badge = (label, message, color='blue', style='?style=for-the-badge') => {
   return image(label, url)
 }
 
-module.exports = { hr, collapsible, anchor, link, image, quote, badge }
+module.exports = { hr, collapsible, anchor, link, image, quote, badge, imageWithSize }

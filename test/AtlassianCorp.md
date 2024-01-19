@@ -1,5 +1,5 @@
 
-# <img src="https://www.atlassian.com/apple-touch-icon.png" alt="Atlassian Corp Logo" height="25px" title="Atlassian Corp" /> Atlassian Corp
+# <img src="https://www.atlassian.com/apple-touch-icon.png" alt="Atlassian Corp Logo" height="25px" title="Atlassian Corp" />  [Atlassian Corp](https://www.atlassian.com/) 
 
 
 ![Role](https://img.shields.io/badge/Role-Competitor-blue?style=for-the-badge)&nbsp;&nbsp;&nbsp;&nbsp;![Type](https://img.shields.io/badge/Type-Public-blue?style=for-the-badge)&nbsp;&nbsp;&nbsp;&nbsp;![Region](https://img.shields.io/badge/Region-AMER-blue?style=for-the-badge)&nbsp;&nbsp;&nbsp;&nbsp;![Creator](https://img.shields.io/badge/Creator-Michael%20Hay-blue?style=for-the-badge)

@@ -53,7 +53,7 @@ const createCompanyFiles = (companies, interactions) => {
     // Using the emphasis module create a bolded version of the string "Company Name:"
     const companyLogo = mrMarkdownBuilder.imageWithSize(`${company.name} Logo`, company.logo_url, 25, company.name)
     // Call the h1 method from the headers module
-    let companyFile = mrMarkdownBuilder.h1(`${companyLogo} ${company.name}`)
+    let companyFile = mrMarkdownBuilder.h1(`${companyLogo} ${mrMarkdownBuilder.link(company.name, company.url)}`)
     // Add a line break
     companyFile += "\n"
     // Add the company badges

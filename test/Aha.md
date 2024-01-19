@@ -1,5 +1,5 @@
 
-# <img src="https://www.aha.io/icons/icon-512x512.png?v=4b9222967840d785d04c63c361279f97" alt="Aha! Logo" height="25px" title="Aha!" /> Aha!
+# <img src="https://www.aha.io/icons/icon-512x512.png?v=4b9222967840d785d04c63c361279f97" alt="Aha! Logo" height="25px" title="Aha!" />  [Aha!](https://www.aha.io/) 
 
 
 ![Role](https://img.shields.io/badge/Role-Competitor-blue?style=for-the-badge)&nbsp;&nbsp;&nbsp;&nbsp;![Type](https://img.shields.io/badge/Type-Private-blue?style=for-the-badge)&nbsp;&nbsp;&nbsp;&nbsp;![Region](https://img.shields.io/badge/Region-AMER-blue?style=for-the-badge)&nbsp;&nbsp;&nbsp;&nbsp;![Creator](https://img.shields.io/badge/Creator-Michael%20Hay-blue?style=for-the-badge)

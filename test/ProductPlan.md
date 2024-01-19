@@ -1,5 +1,5 @@
 
-# <img src="https://www.productplan.com/uploads/PP-favicon.png" alt="ProductPlan Logo" height="25px" title="ProductPlan" /> ProductPlan
+# <img src="https://www.productplan.com/uploads/PP-favicon.png" alt="ProductPlan Logo" height="25px" title="ProductPlan" />  [ProductPlan](https://www.productplan.com/) 
 
 
 ![Role](https://img.shields.io/badge/Role-Competitor-blue?style=for-the-badge)&nbsp;&nbsp;&nbsp;&nbsp;![Type](https://img.shields.io/badge/Type-Private-blue?style=for-the-badge)&nbsp;&nbsp;&nbsp;&nbsp;![Region](https://img.shields.io/badge/Region-AMER-blue?style=for-the-badge)&nbsp;&nbsp;&nbsp;&nbsp;![Creator](https://img.shields.io/badge/Creator-John%20Goodman-blue?style=for-the-badge)

@@ -9,8 +9,12 @@
 ---
 
 
-## Industry Details
+## Standard Industry Code (SIC) Details
 
 * **Industry** &#8594; Computer Processing and Data Preparation and Processing Services (Code: 7374)
 * **Industry Group** &#8594; Computer Programming, Data Processing, And Other Computer Related Services (Code: 737)
 * **Major Group** &#8594; Business Services (Code: 73)
+
+## Interactions
+ 
+ [How Product Managers Should Define Customer Personas | Aha! software](../../Interactions/How Product Managers Should Define Customer Personas | Aha! software.pdf)

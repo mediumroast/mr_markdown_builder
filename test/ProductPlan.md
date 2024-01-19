@@ -9,8 +9,12 @@
 ---
 
 
-## Industry Details
+## Standard Industry Code (SIC) Details
 
 * **Industry** &#8594; Computers and Computer Peripheral Equipment and Software (Code: 5045)
 * **Industry Group** &#8594; Professional And Commercial Equipment And Supplies (Code: 504)
 * **Major Group** &#8594; Wholesale Trade-durable Goods (Code: 50)
+
+## Interactions
+ 
+ [Smoky Sweet Coffee Rub (for beef & pork) - Southern Discourse](../../Interactions/Smoky Sweet Coffee Rub (for beef & pork) - Southern Discourse.pdf),[The_Product_Book_2nd_Edition](../../Interactions/The_Product_Book_2nd_Edition.pdf)

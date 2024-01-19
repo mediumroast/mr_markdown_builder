@@ -25,6 +25,11 @@ const TABLE_HEADER_SEP = ' |---| '
 const INLINE_CODE = '`'
 const CODE_BLOCK = '```'
 
+const RIGHT_ARROW = ' &#8594; '
+const LEFT_ARROW = ' &#8592; '
+const UP_ARROW = ' &#8593; '
+const DOWN_ARROW = ' &#8595; '
+
 module.exports = {
   HEADER_PREFIX,
   EMPHASIS_ITALICS,
@@ -39,5 +44,9 @@ module.exports = {
   TABLE_HEADER_SEP,
   INLINE_CODE,
   CODE_BLOCK,
-  TASK_LIST_PREFIX
+  TASK_LIST_PREFIX,
+  RIGHT_ARROW,
+  LEFT_ARROW,
+  UP_ARROW,
+  DOWN_ARROW
 }

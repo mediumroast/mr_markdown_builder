@@ -9,7 +9,7 @@
 ---
 
 
-## Industry Details
+## Standard Industry Code (SIC) Details
 
 * **Industry** &#8594; Computer Processing and Data Preparation and Processing Services (Code: 7374)
 * **Industry Group** &#8594; Computer Programming, Data Processing, And Other Computer Related Services (Code: 737)

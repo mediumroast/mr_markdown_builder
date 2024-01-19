@@ -37,7 +37,7 @@ const createInteractionList = (company, interactions) => {
         // Find the interaction object that matches the interaction name
         const interaction = interactions.find((interaction) => interaction.name === interactionName)
         // Create link internal link to the interaction file    
-        const interactionLink = mrMarkdownBuilder.link(interaction.name, `../${encodeURI(interaction.url)}`)
+        const interactionLink = mrMarkdownBuilder.link(interaction.name, `/${encodeURI(interaction.url)}`)
         return interactionLink
     })
     

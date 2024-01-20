@@ -14,7 +14,7 @@ const createBadges = (company) => {
         mrMarkdownBuilder.badge(encodeURIComponent('Region'), company.region),
         mrMarkdownBuilder.badge(encodeURIComponent('Creator'), encodeURIComponent(company.creator_name))
     ]
-    return "\n" + badgesRow.join('&nbsp;&nbsp;&nbsp;&nbsp;') + "\n"
+    return "\n" + badgesRow.join('&nbsp;&nbsp;') + "\n"
 }
 
 // Create a function that takes the company object and returns a list of industry data from the company covering industry, industry_group_description, and major_group_description
@@ -41,7 +41,7 @@ const createInteractionList = (company, interactions) => {
         return interactionLink
     })
     
-    return `${mrMarkdownBuilder.h2('Interactions')} \n ${mrMarkdownBuilder.ul([interactionList])}`
+    return `${mrMarkdownBuilder.h2('Interactions')} \n ${mrMarkdownBuilder.ul(interactionList)}`
 }
 
 

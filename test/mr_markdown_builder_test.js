@@ -78,6 +78,9 @@ const createCompanyFiles = (companies, interactions) => {
     // Add a line break
     companyFile += "\n"
 
+    // Add an h2 for the company's location
+    companyFile += mrMarkdownBuilder.h2('Location')
+
     // Create a geojson object for the company
     const companyGeojson = {
         type: 'Feature',

@@ -15,6 +15,8 @@
 * **Industry Group** &#8594; Computer Programming, Data Processing, And Other Computer Related Services (Code: 737)
 * **Major Group** &#8594; Business Services (Code: 73)
 
+
+## Location
 ```geojson
 {
   "type": "Feature",

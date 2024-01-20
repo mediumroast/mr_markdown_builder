@@ -23,19 +23,24 @@
 ## Location
 ```geojson
 {
-  "type": "Feature",
-  "geometry": {
-    "type": "Point",
-    "coordinates": [
-      -122.17124493370723,
-      37.4585084
-    ]
-  },
-  "properties": {
-    "name": "Aha!",
-    "description": "Aha! is a cloud-based software company that provides product development software for companies in the United States and internationally. Aha! offers Software-as-a-Service (SaaS) products for organizations to set strategy, ideate, plan, showcase, build, and launch new products and enhancements.",
-    "role": "Competitor",
-    "url": "https://www.aha.io/"
-  }
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.17124493370723,
+          37.4585084
+        ]
+      },
+      "properties": {
+        "name": "Aha!",
+        "description": "Aha! is a cloud-based software company that provides product development software for companies in the United States and internationally. Aha! offers Software-as-a-Service (SaaS) products for organizations to set strategy, ideate, plan, showcase, build, and launch new products and enhancements.",
+        "role": "Competitor",
+        "url": "https://www.aha.io/"
+      }
+    }
+  ]
 }
 ```

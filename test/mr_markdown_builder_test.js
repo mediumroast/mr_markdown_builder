@@ -4,6 +4,7 @@ const fs = require('fs')
 
 // Import all modules from ../index.js
 const mrMarkdownBuilder = require('../src/index.js')
+const { type } = require('os')
 
 // Create a function, using the markdown instance, that takes company_role, company_type, region, modification_date, and creator as input and produces a table of badges with each badge in a cell. The input is an individual company object.
 const createBadges = (company) => {
@@ -83,17 +84,22 @@ const createCompanyFiles = (companies, interactions) => {
 
     // Create a geojson object for the company
     const companyGeojson = {
-        type: 'Feature',
-        geometry: {
-            type: 'Point',
-            coordinates: [company.longitude, company.latitude]
-        },
-        properties: {
-            name: company.name,
-            description: company.description,
-            role: company.role,
-            url: company.url
-        }
+        type: 'FeatureCollection',
+        features: [
+            {   
+                type: 'Feature',
+                geometry: {
+                    type: 'Point',
+                    coordinates: [company.longitude, company.latitude]
+                },
+                properties: {
+                    name: company.name,
+                    description: company.description,
+                    role: company.role,
+                    url: company.url
+                }
+            }
+        ]
     }
     // Add the geojson object to the company file
     companyFile += mrMarkdownBuilder.geojson(companyGeojson)

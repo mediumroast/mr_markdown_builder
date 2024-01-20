@@ -24,19 +24,24 @@
 ## Location
 ```geojson
 {
-  "type": "Feature",
-  "geometry": {
-    "type": "Point",
-    "coordinates": [
-      -119.69875095370872,
-      34.42157295
-    ]
-  },
-  "properties": {
-    "name": "ProductPlan",
-    "description": "ProductPlan focuses on providing roadmap software solutions. The company offers a platform to simplify product management by enabling users to build strategic roadmaps, align with customer needs, prioritize tasks, and measure success.",
-    "role": "Competitor",
-    "url": "https://www.productplan.com/"
-  }
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.69875095370872,
+          34.42157295
+        ]
+      },
+      "properties": {
+        "name": "ProductPlan",
+        "description": "ProductPlan focuses on providing roadmap software solutions. The company offers a platform to simplify product management by enabling users to build strategic roadmaps, align with customer needs, prioritize tasks, and measure success.",
+        "role": "Competitor",
+        "url": "https://www.productplan.com/"
+      }
+    }
+  ]
 }
 ```

@@ -74,6 +74,26 @@ const createCompanyFiles = (companies, interactions) => {
     if (Object.keys(company.linked_interactions).length > 0) {
         companyFile += createInteractionList(company, interactions)
     }
+
+    // Add a line break
+    companyFile += "\n"
+
+    // Create a geojson object for the company
+    const companyGeojson = {
+        type: 'Feature',
+        geometry: {
+            type: 'Point',
+            coordinates: [company.longitude, company.latitude]
+        },
+        properties: {
+            name: company.name,
+            description: company.description,
+            role: company.role,
+            url: company.url
+        }
+    }
+    // Add the geojson object to the company file
+    companyFile += mrMarkdownBuilder.geojson(companyGeojson)
     
     // Write the file
     fs.writeFileSync(`./${companyFileName}.md`, companyFile)

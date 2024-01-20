@@ -35,7 +35,7 @@ const link = (title, url) => {
     url = anchor(title)
   }
   return ` [${title}](${url}) `
-};
+}
 
 const image = (alt, url, title = '') =>
   `![${alt}](${url}${title !== '' ? ` "${title}"` : ''})`
@@ -53,4 +53,26 @@ const badge = (label, message, color='blue', style='?style=for-the-badge') => {
   return image(label, url)
 }
 
-module.exports = { hr, collapsible, anchor, link, image, quote, badge, imageWithSize }
+// Create an up arrow function
+const upArrow = () => '&#8593;'
+// Create a down arrow function
+const downArrow = () => '&#8595;'
+// Create a right arrow function
+const rightArrow = () => '&#8594;'
+// Create a left arrow function
+const leftArrow = () => '&#8592;'
+
+module.exports = { 
+  hr, 
+  collapsible, 
+  anchor, 
+  link, 
+  image, 
+  quote, 
+  badge, 
+  imageWithSize,
+  upArrow,
+  downArrow,
+  rightArrow,
+  leftArrow 
+}

@@ -24,11 +24,17 @@ const TABLE_HEADER_SEP = ' |---| '
 
 const INLINE_CODE = '`'
 const CODE_BLOCK = '```'
-
-const RIGHT_ARROW = ' &#8594; '
-const LEFT_ARROW = ' &#8592; '
-const UP_ARROW = ' &#8593; '
-const DOWN_ARROW = ' &#8595; '
+const CODE_BLOCK_LANG_JS = 'js'
+const CODE_BLOCK_LANG_PYTHON = 'python'
+const CODE_BLOCK_LANG_BASH = 'bash'
+const CODE_BLOCK_GEOJSON = 'geojson'
+const CODE_BLOCK_LANG_JSON = 'json'
+const CODE_BLOCK_LANG_YAML = 'yaml'
+const CODE_BLOCK_LANG_SQL = 'sql'
+const CODE_BLOCK_LANG_MARKDOWN = 'markdown'
+const CODE_BLOCK_LANG_HTML = 'html'
+const CODE_BLOCK_LANG_CSS = 'css'
+const CODE_BLOCK_TOPOJSON = 'topojson'
 
 module.exports = {
   HEADER_PREFIX,
@@ -44,9 +50,11 @@ module.exports = {
   TABLE_HEADER_SEP,
   INLINE_CODE,
   CODE_BLOCK,
-  TASK_LIST_PREFIX,
-  RIGHT_ARROW,
-  LEFT_ARROW,
-  UP_ARROW,
-  DOWN_ARROW
+  CODE_BLOCK_LANG_JS,
+  CODE_BLOCK_LANG_PYTHON,
+  CODE_BLOCK_LANG_BASH,
+  CODE_BLOCK_GEOJSON,
+  CODE_BLOCK_LANG_JSON,
+  CODE_BLOCK_TOPOJSON,
+  TASK_LIST_PREFIX
 }

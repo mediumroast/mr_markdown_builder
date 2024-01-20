@@ -18,3 +18,20 @@
 ## Interactions
  
  *  [How Product Managers Should Define Customer Personas | Aha! software](/Interactions/How%20Product%20Managers%20Should%20Define%20Customer%20Personas%20%7C%20Aha!%20software.pdf) 
+
+```geojson{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -122.17124493370723,
+      37.4585084
+    ]
+  },
+  "properties": {
+    "name": "Aha!",
+    "description": "Aha! is a cloud-based software company that provides product development software for companies in the United States and internationally. Aha! offers Software-as-a-Service (SaaS) products for organizations to set strategy, ideate, plan, showcase, build, and launch new products and enhancements.",
+    "role": "Competitor",
+    "url": "https://www.aha.io/"
+  }
+}```geojson

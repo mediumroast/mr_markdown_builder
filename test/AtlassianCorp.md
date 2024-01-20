@@ -15,7 +15,8 @@
 * **Industry Group** &#8594; Computer Programming, Data Processing, And Other Computer Related Services (Code: 737)
 * **Major Group** &#8594; Business Services (Code: 73)
 
-```geojson{
+```geojson
+{
   "type": "Feature",
   "geometry": {
     "type": "Point",
@@ -30,4 +31,5 @@
     "role": "Competitor",
     "url": "https://www.atlassian.com/"
   }
-}```geojson
+}
+```

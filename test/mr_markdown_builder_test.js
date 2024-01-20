@@ -88,6 +88,7 @@ const createCompanyFiles = (companies, interactions) => {
         features: [
             {   
                 type: 'Feature',
+                id: 1,
                 geometry: {
                     type: 'Point',
                     coordinates: [company.longitude, company.latitude]

@@ -27,6 +27,7 @@
   "features": [
     {
       "type": "Feature",
+      "id": 1,
       "geometry": {
         "type": "Point",
         "coordinates": [

@@ -84,11 +84,7 @@ const createCompanyFiles = (companies, interactions) => {
 
     // Create a geojson object for the company
     const companyGeojson = {
-        type: 'FeatureCollection',
-        features: [
-            {   
                 type: 'Feature',
-                id: 1,
                 geometry: {
                     type: 'Point',
                     coordinates: [company.longitude, company.latitude]
@@ -99,8 +95,6 @@ const createCompanyFiles = (companies, interactions) => {
                     role: company.role,
                     url: company.url
                 }
-            }
-        ]
     }
     // Add the geojson object to the company file
     companyFile += mrMarkdownBuilder.geojson(companyGeojson)

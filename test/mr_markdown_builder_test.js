@@ -86,7 +86,7 @@ const createCompanyWebLinkList = (company) => {
     if (company.company_type === 'Public') {
         listItems.push(
             [mrMarkdownBuilder.link(`Google Finance`, company.google_finance_url)],
-            [mrMarkdownBuilder.link(`Most Recent 10-k Filing`, company.recent10k_url)],
+            [mrMarkdownBuilder.link(`Most Recent 10-K Filing`, company.recent10k_url)],
             [mrMarkdownBuilder.link(`Most Recent 10-Q Filing`, company.recent10q_url)],
             [mrMarkdownBuilder.link(`SEC EDGAR Firmographics`, company.firmographics_url)],
             [mrMarkdownBuilder.link(`All Filings for ${company.name}`, company.filings_url)],
@@ -154,7 +154,30 @@ const createCompanyFiles = (companies, interactions) => {
   }
 }
 
-// https://img.shields.io/badge/Company%20Role-Private-blue?style=for-the-badge
+// Create a function that takes all companies and constructs a README.md file with a table of contents and a link to each company file followed by the company description in a table. The table should have the following columns: Company Name, Company Type, Company Role, Company Region.
+const createReadme = (companies) => {
+    let readme = mrMarkdownBuilder.h1('Company Directory')
+    readme = 'Below is a listing of all companies in the directory. Click on the company name to view the company details.\n'
+    readme = mrMarkdownBuilder.h2('Company Directory')
+    // Create the table header
+    const tableHeader = mrMarkdownBuilder.tableHeader(['Company Name', 'Company Type', 'Company Role', 'Company Region'])
+    // Create the table rows
+    const tableRows = companies.map((company) => {
+        const companyRow = [
+            mrMarkdownBuilder.link(company.name, `/${encodeURI(company.name.replace(/[\s,.\?!]/g, ''))}`),
+            company.company_type,
+            company.role,
+            company.region
+        ]
+        return companyRow
+    })
+    // Create the table
+    const companyTable = tableHeader + "\n" + mrMarkdownBuilder.tableRows(tableRows)
+    // Create the README.md file
+    readme = mrMarkdownBuilder.h1('Company Directory') + "\n" + companyTable
+    // Write the file
+    fs.writeFileSync('./README.md', readme)
+}
 
 
 // Read the companies.json file and convert it to a JavaScript object
@@ -165,6 +188,10 @@ const interactions = JSON.parse(fs.readFileSync('./interactions.json', 'utf8'))
 
 // Call the createCompanyFiles function with the companies object
 createCompanyFiles(companies, interactions)
+
+// Call the createReadme function with the companies object
+createReadme(companies)
+
 
 
 

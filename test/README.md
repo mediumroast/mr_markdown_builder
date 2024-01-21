@@ -1,6 +1,5 @@
 
-# Company Directory
-
+## Company Directory
  | Company Name | Company Type | Company Role | Company Region | 
  |  ---  |  ---  |  ---  |  ---  | 
  |  [Mediumroast, Inc.](/MediumroastInc)  | Private | Owner | AMER | 

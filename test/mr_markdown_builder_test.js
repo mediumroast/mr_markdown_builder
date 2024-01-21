@@ -157,7 +157,7 @@ const createCompanyFiles = (companies, interactions) => {
 // Create a function that takes all companies and constructs a README.md file with a table of contents and a link to each company file followed by the company description in a table. The table should have the following columns: Company Name, Company Type, Company Role, Company Region.
 const createReadme = (companies) => {
     let readme = mrMarkdownBuilder.h1('Company Directory')
-    readme = 'Below is a listing of all companies in the directory. Click on the company name to view the company details.\n'
+    readme += 'Below is a listing of all companies in the directory. Click on the company name to view the company details.\n'
     readme = mrMarkdownBuilder.h2('Company Directory')
     // Create the table header
     const tableHeader = mrMarkdownBuilder.tableHeader(['Company Name', 'Company Type', 'Company Role', 'Company Region'])
@@ -174,7 +174,7 @@ const createReadme = (companies) => {
     // Create the table
     const companyTable = tableHeader + "\n" + mrMarkdownBuilder.tableRows(tableRows)
     // Create the README.md file
-    readme = mrMarkdownBuilder.h1('Company Directory') + "\n" + companyTable
+    readme += companyTable
     // Write the file
     fs.writeFileSync('./README.md', readme)
 }

@@ -70,23 +70,23 @@ const createGeojson = (company) => {
 // Create a function that takes the company object and creates a table from several of the company properties which switch based upon the company type being public or not public. The properties for both public and not public are: wikipedia_url, google_news_url, google_maps_url, google_patents_url. The properties specific to public are google_finance_url, recent10k_url, recent10q_url, firmographics_url, filings_url and owner_transactions.
 const createCompanyTable = (company) => {
     // Create the table header
-    const tableHeader = mrMarkdownBuilder.tableHeader(['Property', 'Value'])
+    const tableHeader = mrMarkdownBuilder.tableHeader(['Web Link'])
     // Create the table rows
     const tableRows = [
-        ['Wikipedia', mrMarkdownBuilder.link(company.wikipedia_url, company.wikipedia_url)],
-        ['Google News', mrMarkdownBuilder.link(company.google_news_url, company.google_news_url)],
-        ['Google Maps', mrMarkdownBuilder.link(company.google_maps_url, company.google_maps_url)],
-        ['Google Patents', mrMarkdownBuilder.link(company.google_patents_url, company.google_patents_url)]
+        [mrMarkdownBuilder.link(`Wikipedia for ${company.name}`, company.wikipedia_url)],
+        [mrMarkdownBuilder.link(`${company.name} on Google News`, company.google_news_url)],
+        [mrMarkdownBuilder.link(`Map for ${company.name}`, company.google_maps_url)],
+        [mrMarkdownBuilder.link(`${company.name} Patents`, company.google_patents_url)]
     ]
     // If the company is public then add the public properties
     if (company.company_type === 'Public') {
         tableRows.push(
-            ['Google Finance', mrMarkdownBuilder.link(company.google_finance_url, company.google_finance_url)],
-            ['Recent 10K', mrMarkdownBuilder.link(company.recent10k_url, company.recent10k_url)],
-            ['Recent 10Q', mrMarkdownBuilder.link(company.recent10q_url, company.recent10q_url)],
-            ['Firmographics', mrMarkdownBuilder.link(company.firmographics_url, company.firmographics_url)],
-            ['Filings', mrMarkdownBuilder.link(company.filings_url, company.filings_url)],
-            ['Owner Transactions', mrMarkdownBuilder.link(company.owner_transactions_url, company.owner_transactions_url)]
+            [mrMarkdownBuilder.link(`Google Finance`, company.google_finance_url)],
+            [mrMarkdownBuilder.link(`Most Recent 10-k Filing`, company.recent10k_url)],
+            [mrMarkdownBuilder.link(`Most Recent 10-Q Filing`, company.recent10q_url)],
+            [mrMarkdownBuilder.link(`SEC EDGAR Firmographics`, company.firmographics_url)],
+            [mrMarkdownBuilder.link(`All Filings for ${company.name}`, company.filings_url)],
+            [mrMarkdownBuilder.link(`Shareholder Transactions`, company.owner_transactions_url)]
         )
     }
     // Create the table

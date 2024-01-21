@@ -20,16 +20,16 @@
 
  | Property | Value | 
  |---|  |---| 
- | Wikipedia, [https://en.wikipedia.org/wiki/Atlassian](https://en.wikipedia.org/wiki/Atlassian)  | 
- | Google News, [https://news.google.com/search?q=Atlassian%20Corp](https://news.google.com/search?q=Atlassian%20Corp)  | 
- | Google Maps, [https://www.google.com/maps/place/350%20Bush%20St%2C%20Floor%2013%2C%20San%20Francisco%2C%20California%2C%2094104](https://www.google.com/maps/place/350%20Bush%20St%2C%20Floor%2013%2C%20San%20Francisco%2C%20California%2C%2094104)  | 
- | Google Patents, [https://patents.google.com/?assignee=Atlassian%20Corp](https://patents.google.com/?assignee=Atlassian%20Corp)  | 
- | Google Finance, [https://www.google.com/finance/quote/TEAM:Nasdaq](https://www.google.com/finance/quote/TEAM:Nasdaq)  | 
- | Recent 10K, [https://www.sec.gov/Archives/edgar/data/1650372/000165037223000024/0001650372-23-000024-index.html](https://www.sec.gov/Archives/edgar/data/1650372/000165037223000024/0001650372-23-000024-index.html)  | 
- | Recent 10Q, [https://www.sec.gov/Archives/edgar/data/1650372/000165037223000040/0001650372-23-000040-index.html](https://www.sec.gov/Archives/edgar/data/1650372/000165037223000040/0001650372-23-000040-index.html)  | 
- | Firmographics, [https://data.sec.gov/submissions/CIK0001650372.json](https://data.sec.gov/submissions/CIK0001650372.json)  | 
- | Filings, [https://www.sec.gov/cgi-bin/browse-edgar?CIK=1650372&action=getcompany](https://www.sec.gov/cgi-bin/browse-edgar?CIK=1650372&action=getcompany)  | 
- | Owner Transactions, [undefined](undefined)  | 
+ | Wikipedia |  [https://en.wikipedia.org/wiki/Atlassian](https://en.wikipedia.org/wiki/Atlassian)  | 
+ | Google News |  [https://news.google.com/search?q=Atlassian%20Corp](https://news.google.com/search?q=Atlassian%20Corp)  | 
+ | Google Maps |  [https://www.google.com/maps/place/350%20Bush%20St%2C%20Floor%2013%2C%20San%20Francisco%2C%20California%2C%2094104](https://www.google.com/maps/place/350%20Bush%20St%2C%20Floor%2013%2C%20San%20Francisco%2C%20California%2C%2094104)  | 
+ | Google Patents |  [https://patents.google.com/?assignee=Atlassian%20Corp](https://patents.google.com/?assignee=Atlassian%20Corp)  | 
+ | Google Finance |  [https://www.google.com/finance/quote/TEAM:Nasdaq](https://www.google.com/finance/quote/TEAM:Nasdaq)  | 
+ | Recent 10K |  [https://www.sec.gov/Archives/edgar/data/1650372/000165037223000024/0001650372-23-000024-index.html](https://www.sec.gov/Archives/edgar/data/1650372/000165037223000024/0001650372-23-000024-index.html)  | 
+ | Recent 10Q |  [https://www.sec.gov/Archives/edgar/data/1650372/000165037223000040/0001650372-23-000040-index.html](https://www.sec.gov/Archives/edgar/data/1650372/000165037223000040/0001650372-23-000040-index.html)  | 
+ | Firmographics |  [https://data.sec.gov/submissions/CIK0001650372.json](https://data.sec.gov/submissions/CIK0001650372.json)  | 
+ | Filings |  [https://www.sec.gov/cgi-bin/browse-edgar?CIK=1650372&action=getcompany](https://www.sec.gov/cgi-bin/browse-edgar?CIK=1650372&action=getcompany)  | 
+ | Owner Transactions |  [undefined](undefined)  | 
 
 
 ## Location

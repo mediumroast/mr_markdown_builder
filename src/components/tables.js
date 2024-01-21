@@ -17,7 +17,7 @@ const tableRows = (rows) => {
         // Join the cells with the table cell divider
         let myRow = row.join(TABLE_CELL_DIV)
         // Surround the row with the table cell divider
-        myRow = surround(TABLE_CELL_DIV, row)
+        myRow = surround(TABLE_CELL_DIV, myRow)
         // Add the row to the rows array
         myRows.push(myRow)
     }

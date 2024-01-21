@@ -158,7 +158,7 @@ const createCompanyFiles = (companies, interactions) => {
 const createReadme = (companies) => {
     let readme = mrMarkdownBuilder.h1('Company Directory')
     readme += 'Below is a listing of all companies in the directory. Click on the company name to view the company details.\n'
-    readme = mrMarkdownBuilder.h2('Company Directory')
+    readme += mrMarkdownBuilder.h2('Table of Companies')
     // Create the table header
     const tableHeader = mrMarkdownBuilder.tableHeader(['Company Name', 'Company Type', 'Company Role', 'Company Region'])
     // Create the table rows

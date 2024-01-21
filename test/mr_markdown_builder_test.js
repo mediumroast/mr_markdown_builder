@@ -149,7 +149,7 @@ const createCompanyFiles = (companies, interactions) => {
     // Add the creation date
     companyFile += `Created on ${company.creation_date} by ${company.creator_name}`
     // Add a line break
-    companyFile += "\n"
+    companyFile += "\n\n"
     // Add the modification date
     companyFile += `Last modified on ${company.modification_date}`
     

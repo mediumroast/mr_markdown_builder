@@ -71,8 +71,13 @@ const createGeojson = (company) => {
 const createCompanyWebLinkList = (company) => {
 
     // Create the table rows
+    let wikipediaURL
+    company.wikipedia_url === 'Unknown' ? 
+        wikipediaURL = 'company.wikipedia_url' :
+         wikipediaURL = mrMarkdownBuilder.link(`Wikipedia for ${company.name}`, company.wikipedia_url)
     let listItems = [
-        [mrMarkdownBuilder.link(`Wikipedia for ${company.name}`, company.wikipedia_url)],
+        
+        [mrMarkdownBuilder.link(`Wikipedia for ${company.name}`, wikipediaURL)],
         [mrMarkdownBuilder.link(`${company.name} on Google News`, company.google_news_url)],
         [mrMarkdownBuilder.link(`Map for ${company.name}`, company.google_maps_url)],
         [mrMarkdownBuilder.link(`${company.name} Patents`, company.google_patents_url)]

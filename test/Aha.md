@@ -49,6 +49,4 @@
 ```
 
 ---
-Created on 2024-01-14T00:24:57.875Z by Michael Hay
-
-Last modified on 2024-01-14T02:09:30.740Z
+[ **Created: ** 2024-01-14T00:24:57.875Z by Michael Hay | **Modified: **2024-01-14T02:09:30.740Z ]

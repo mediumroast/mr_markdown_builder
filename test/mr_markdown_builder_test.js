@@ -147,11 +147,7 @@ const createCompanyFiles = (companies, interactions) => {
     companyFile += mrMarkdownBuilder.hr()
 
     // Add the creation date
-    companyFile += `Created on ${company.creation_date} by ${company.creator_name}`
-    // Add a line break
-    companyFile += "\n\n"
-    // Add the modification date
-    companyFile += `Last modified on ${company.modification_date}`
+    companyFile += `[ ${mrMarkdownBuilder.b('Created: ')} ${company.creation_date} by ${company.creator_name} | ${mrMarkdownBuilder.b('Modified: ')}${company.modification_date} ]`
     
     // Write the file
     fs.writeFileSync(`./${companyFileName}.md`, companyFile)

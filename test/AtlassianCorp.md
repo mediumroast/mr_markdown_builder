@@ -1,3 +1,4 @@
+[ [Back to Company Directory](./README.md) ]
 
 ---
 

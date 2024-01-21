@@ -35,7 +35,10 @@ const tableHeader = (headerCells) => {
     let myHeader = headerCells.join(TABLE_CELL_DIV)
     myHeader = surround(TABLE_CELL_DIV, myHeader)
     // Get the total length of the header cells and create a separator that repeats that many times
-    const headerSeparator = TABLE_HEADER_SEP.repeat(headerCells.length)
+    // Create a list of the length of headerCells containing the TABLE_HEADER_SEP
+    let headerSeparator = new Array(headerCells.length).fill(TABLE_HEADER_SEP)
+    headerSeparator = headerSeparator.join(TABLE_CELL_DIV)
+    headerSeparator = surround(TABLE_CELL_DIV, headerSeparator)
     return myHeader + '\n' + headerSeparator
 }
 

@@ -24,7 +24,7 @@
 ## Key Web Links
 
  | Property | Value | 
- | --- |  | --- | 
+ |  ---  |  ---  | 
  | Wikipedia |  [Unknown](Unknown)  | 
  | Google News |  [https://news.google.com/search?q=ProductPlan](https://news.google.com/search?q=ProductPlan)  | 
  | Google Maps |  [https://www.google.com/maps/place/836%20Anacapa%20Street%20Santa%20Barbara%20CA%2093101%20USA](https://www.google.com/maps/place/836%20Anacapa%20Street%20Santa%20Barbara%20CA%2093101%20USA)  | 

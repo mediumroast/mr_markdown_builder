@@ -18,7 +18,7 @@
 
 ## Key Web Links
 
-*  [Wikipedia for Atlassian Corp]( [Wikipedia for Atlassian Corp](https://en.wikipedia.org/wiki/Atlassian) ) 
+*  [Wikipedia for Atlassian Corp](https://en.wikipedia.org/wiki/Atlassian) 
 *  [Atlassian Corp on Google News](https://news.google.com/search?q=Atlassian%20Corp) 
 *  [Map for Atlassian Corp](https://www.google.com/maps/place/350%20Bush%20St%2C%20Floor%2013%2C%20San%20Francisco%2C%20California%2C%2094104) 
 *  [Atlassian Corp Patents](https://patents.google.com/?assignee=Atlassian%20Corp) 

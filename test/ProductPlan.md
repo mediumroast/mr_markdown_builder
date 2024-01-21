@@ -23,7 +23,7 @@
 
 ## Key Web Links
 
-*  [Wikipedia for ProductPlan](company.wikipedia_url) 
+* Unknown
 *  [ProductPlan on Google News](https://news.google.com/search?q=ProductPlan) 
 *  [Map for ProductPlan](https://www.google.com/maps/place/836%20Anacapa%20Street%20Santa%20Barbara%20CA%2093101%20USA) 
 *  [ProductPlan Patents](https://patents.google.com/?assignee=ProductPlan) 

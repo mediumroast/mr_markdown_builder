@@ -139,6 +139,19 @@ const createCompanyFiles = (companies, interactions) => {
 
     // Add an h2 for the company's location
     companyFile += createGeojson(company)
+
+    // Add a line break
+    companyFile += "\n"
+
+    // Add a horizontal rule
+    companyFile += mrMarkdownBuilder.hr()
+
+    // Add the creation date
+    companyFile += `Created on ${company.creation_date} by ${company.creator_name}`
+    // Add a line break
+    companyFile += "\n"
+    // Add the modification date
+    companyFile += `Last modified on ${company.modification_date}`
     
     // Write the file
     fs.writeFileSync(`./${companyFileName}.md`, companyFile)

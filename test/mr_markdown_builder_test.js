@@ -164,7 +164,7 @@ const createReadme = (companies) => {
     // Create the table rows
     const tableRows = companies.map((company) => {
         const companyRow = [
-            mrMarkdownBuilder.link(company.name, `./${encodeURI(company.name.replace(/[\s,.\?!]/g, ''))}`),
+            mrMarkdownBuilder.link(company.name, `./${encodeURI(company.name.replace(/[\s,.\?!]/g, ''))}.md`),
             company.company_type,
             company.role,
             company.region

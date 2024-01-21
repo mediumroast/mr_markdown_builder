@@ -90,7 +90,7 @@ const createCompanyTable = (company) => {
         )
     }
     // Create the table
-    return mrMarkdownBuilder.h2('Key Web Links') + "\n" + tableHeader + "\n" + tableRows
+    return mrMarkdownBuilder.h2('Key Web Links') + "\n" + tableHeader + "\n" + mrMarkdownBuilder.tableRow(tableRows)
 }
 
 

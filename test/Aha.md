@@ -20,6 +20,12 @@
  *  [How Product Managers Should Define Customer Personas | Aha! software](/Interactions/How%20Product%20Managers%20Should%20Define%20Customer%20Personas%20%7C%20Aha!%20software.pdf) 
 
 
+## Key Web Links
+
+ | Property,Value | 
+ |---|  |---|  |---|  |---|  |---|  |---|  |---|  |---|  |---|  |---|  |---|  |---|  |---|  |---|  |---|  |---|  |---|  |---|  |---|  |---| 
+Wikipedia, [Unknown](Unknown) ,Google News, [https://news.google.com/search?q=Aha!](https://news.google.com/search?q=Aha!) ,Google Maps, [https://www.google.com/maps/place/20%20Gloria%20Cir%20Menlo%20Park%20CA%2094025%20USA](https://www.google.com/maps/place/20%20Gloria%20Cir%20Menlo%20Park%20CA%2094025%20USA) ,Google Patents, [https://patents.google.com/?assignee=Aha!](https://patents.google.com/?assignee=Aha!) 
+
 ## Location
 ```geojson
 {

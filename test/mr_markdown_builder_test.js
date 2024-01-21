@@ -45,6 +45,54 @@ const createInteractionList = (company, interactions) => {
     return `${mrMarkdownBuilder.h2('Interactions')} \n ${mrMarkdownBuilder.ul(interactionList)}`
 }
 
+// Create a function that company object and creates a geojson object for the company including the header and the geojson object
+const createGeojson = (company) => {
+    let geoJsonMarkdown = mrMarkdownBuilder.h2('Location')
+    // Create the Industry List
+    const geoJson = {
+        type: 'Feature',
+        geometry: {
+            type: 'Point',
+            coordinates: [company.longitude, company.latitude]
+        },
+        properties: {
+            name: company.name,
+            description: company.description,
+            role: company.role,
+            url: company.url
+        }
+    }
+    // Add the geojson object to the company file
+    geoJsonMarkdown += mrMarkdownBuilder.geojson(geoJson)
+    return geoJsonMarkdown
+}
+
+// Create a function that takes the company object and creates a table from several of the company properties which switch based upon the company type being public or not public. The properties for both public and not public are: wikipedia_url, google_news_url, google_maps_url, google_patents_url. The properties specific to public are google_finance_url, recent10k_url, recent10q_url, firmographics_url, filings_url and owner_transactions.
+const createCompanyTable = (company) => {
+    // Create the table header
+    const tableHeader = mrMarkdownBuilder.tableHeader(['Property', 'Value'])
+    // Create the table rows
+    const tableRows = [
+        ['Wikipedia', mrMarkdownBuilder.link(company.wikipedia_url, company.wikipedia_url)],
+        ['Google News', mrMarkdownBuilder.link(company.google_news_url, company.google_news_url)],
+        ['Google Maps', mrMarkdownBuilder.link(company.google_maps_url, company.google_maps_url)],
+        ['Google Patents', mrMarkdownBuilder.link(company.google_patents_url, company.google_patents_url)]
+    ]
+    // If the company is public then add the public properties
+    if (company.company_type === 'Public') {
+        tableRows.push(
+            ['Google Finance', mrMarkdownBuilder.link(company.google_finance_url, company.google_finance_url)],
+            ['Recent 10K', mrMarkdownBuilder.link(company.recent10k_url, company.recent10k_url)],
+            ['Recent 10Q', mrMarkdownBuilder.link(company.recent10q_url, company.recent10q_url)],
+            ['Firmographics', mrMarkdownBuilder.link(company.firmographics_url, company.firmographics_url)],
+            ['Filings', mrMarkdownBuilder.link(company.filings_url, company.filings_url)],
+            ['Owner Transactions', mrMarkdownBuilder.link(company.owner_transactions_url, company.owner_transactions_url)]
+        )
+    }
+    // Create the table
+    return mrMarkdownBuilder.h2('Key Web Links') + "\n" + tableHeader + "\n" + tableRows
+}
+
 
 // Create a function, using the markdown instance, that will take as input all company objects. It then creates a unique file per company with the first line as the company name as a header.
 const createCompanyFiles = (companies, interactions) => {
@@ -79,25 +127,14 @@ const createCompanyFiles = (companies, interactions) => {
     // Add a line break
     companyFile += "\n"
 
-    // Add an h2 for the company's location
-    companyFile += mrMarkdownBuilder.h2('Location')
+    // Create the company table
+    companyFile += createCompanyTable(company)
 
-    // Create a geojson object for the company
-    const companyGeojson = {
-                type: 'Feature',
-                geometry: {
-                    type: 'Point',
-                    coordinates: [company.longitude, company.latitude]
-                },
-                properties: {
-                    name: company.name,
-                    description: company.description,
-                    role: company.role,
-                    url: company.url
-                }
-    }
-    // Add the geojson object to the company file
-    companyFile += mrMarkdownBuilder.geojson(companyGeojson)
+    // Add a line break
+    companyFile += "\n"
+
+    // Add an h2 for the company's location
+    companyFile += createGeojson(company)
     
     // Write the file
     fs.writeFileSync(`./${companyFileName}.md`, companyFile)

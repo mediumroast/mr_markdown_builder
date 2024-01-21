@@ -18,7 +18,7 @@
 
 ## Key Web Links
 
- | Property,Value | 
+ | Property | Value | 
  |---|  |---| 
 Wikipedia, [Unknown](Unknown) ,Google News, [https://news.google.com/search?q=Mediumroast%2C%20Inc.](https://news.google.com/search?q=Mediumroast%2C%20Inc.) ,Google Maps, [https://www.google.com/maps/place/11909%20Sunshine%20Peak%20Ct.%20San%20Diego%20CA%2092131%20USA](https://www.google.com/maps/place/11909%20Sunshine%20Peak%20Ct.%20San%20Diego%20CA%2092131%20USA) ,Google Patents, [https://patents.google.com/?assignee=Mediumroast%2C%20Inc.](https://patents.google.com/?assignee=Mediumroast%2C%20Inc.) 
 

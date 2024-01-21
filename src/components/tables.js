@@ -21,7 +21,7 @@ const tableRow = (cells) => {
  */
 const tableHeader = (headerCells) => {
     let myHeader = headerCells.join(TABLE_CELL_DIV)
-    myHeader = surround(TABLE_CELL_DIV, headerCells)
+    myHeader = surround(TABLE_CELL_DIV, myHeader)
     // Get the total length of the header cells and create a separator that repeats that many times
     const headerSeparator = TABLE_HEADER_SEP.repeat(headerCells.length)
     return myHeader + SECTION_LINE_BREAK + headerSeparator

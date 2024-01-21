@@ -50,4 +50,4 @@
 ```
 
 ---
-[ **Created: ** 2024-01-14T03:26:42.628Z by John Goodman | **Modified: **2024-01-14T03:41:32.216Z ]
+[ **Created:** 2024-01-14T03:26:42.628Z by John Goodman | **Modified:** 2024-01-14T03:41:32.216Z ]

@@ -1,5 +1,5 @@
 # mr_markdown_builder
-A fork of the venerable yet archived version of markdown-builder with improvements including:
+A fork of the venerable yet archived markdown-builder with general and GitHub specific improvements including:
 - Tables
 - Quotes
 - Task lists
@@ -12,7 +12,7 @@ A fork of the venerable yet archived version of markdown-builder with improvemen
 npm install --save mr_markdown_builder
 ```
 
-Using `mr_markdown_builder` is quite easy:
+Using `mr_markdown_builder`:
 ```js
 const markdown = require('mr_markdown_builder')
 const { headers } = markdown
@@ -105,6 +105,3 @@ misc.quote('A quote')
 	Content
 </details>
 
-
-
-#### A header with /*() special-characters!

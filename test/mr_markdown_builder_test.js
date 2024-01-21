@@ -4,6 +4,7 @@ const fs = require('fs')
 
 // Import all modules from ../index.js
 const mrMarkdownBuilder = require('../src/index.js')
+const { type } = require('os')
 
 // Create a function, using the markdown instance, that takes company_role, company_type, region, modification_date, and creator as input and produces a table of badges with each badge in a cell. The input is an individual company object.
 const createBadges = (company) => {
@@ -14,7 +15,7 @@ const createBadges = (company) => {
         mrMarkdownBuilder.badge(encodeURIComponent('Region'), company.region),
         mrMarkdownBuilder.badge(encodeURIComponent('Creator'), encodeURIComponent(company.creator_name))
     ]
-    return "\n" + badgesRow.join('&nbsp;&nbsp;&nbsp;&nbsp;') + "\n"
+    return "\n" + badgesRow.join('&nbsp;&nbsp;') + "\n"
 }
 
 // Create a function that takes the company object and returns a list of industry data from the company covering industry, industry_group_description, and major_group_description
@@ -37,11 +38,11 @@ const createInteractionList = (company, interactions) => {
         // Find the interaction object that matches the interaction name
         const interaction = interactions.find((interaction) => interaction.name === interactionName)
         // Create link internal link to the interaction file    
-        const interactionLink = mrMarkdownBuilder.link(interaction.name, `/${interaction.url}`)
+        const interactionLink = mrMarkdownBuilder.link(interaction.name, `/${encodeURI(interaction.url)}`)
         return interactionLink
     })
     
-    return `${mrMarkdownBuilder.h2('Interactions')} \n ${mrMarkdownBuilder.ul([interactionList])}`
+    return `${mrMarkdownBuilder.h2('Interactions')} \n ${mrMarkdownBuilder.ul(interactionList)}`
 }
 
 
@@ -53,7 +54,7 @@ const createCompanyFiles = (companies, interactions) => {
     // Using the emphasis module create a bolded version of the string "Company Name:"
     const companyLogo = mrMarkdownBuilder.imageWithSize(`${company.name} Logo`, company.logo_url, 25, company.name)
     // Call the h1 method from the headers module
-    let companyFile = mrMarkdownBuilder.h1(`${companyLogo} ${company.name}`)
+    let companyFile = mrMarkdownBuilder.h1(`${companyLogo} ${mrMarkdownBuilder.link(company.name, company.url)}`)
     // Add a line break
     companyFile += "\n"
     // Add the company badges
@@ -74,6 +75,29 @@ const createCompanyFiles = (companies, interactions) => {
     if (Object.keys(company.linked_interactions).length > 0) {
         companyFile += createInteractionList(company, interactions)
     }
+
+    // Add a line break
+    companyFile += "\n"
+
+    // Add an h2 for the company's location
+    companyFile += mrMarkdownBuilder.h2('Location')
+
+    // Create a geojson object for the company
+    const companyGeojson = {
+                type: 'Feature',
+                geometry: {
+                    type: 'Point',
+                    coordinates: [company.longitude, company.latitude]
+                },
+                properties: {
+                    name: company.name,
+                    description: company.description,
+                    role: company.role,
+                    url: company.url
+                }
+    }
+    // Add the geojson object to the company file
+    companyFile += mrMarkdownBuilder.geojson(companyGeojson)
     
     // Write the file
     fs.writeFileSync(`./${companyFileName}.md`, companyFile)

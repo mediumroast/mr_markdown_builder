@@ -73,7 +73,7 @@ const createCompanyWebLinkList = (company) => {
     // Create the table rows
     let wikipediaURL
     company.wikipedia_url === 'Unknown' ? 
-        wikipediaURL = company.wikipedia_url :
+        wikipediaURL = `The Wikipedia URL is ${company.wikipedia_url}` :
         wikipediaURL = mrMarkdownBuilder.link(`Wikipedia for ${company.name}`, company.wikipedia_url)
     let listItems = [
         

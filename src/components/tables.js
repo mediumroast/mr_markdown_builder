@@ -8,9 +8,10 @@ const { TABLE_CELL_DIV, TABLE_HEADER_SEP, SECTION_LINE_BREAK } = require('../uti
  * @param {Array[]} cells - array of cells
  * @returns {string} table row
  */
-const tableRow = (cells) => {
+const tableRows = (cells) => {
     const myCells = cells.join(TABLE_CELL_DIV)
-    return surround(TABLE_CELL_DIV, myCells)
+    const row = surround(TABLE_CELL_DIV, myCells)
+    return row + SECTION_LINE_BREAK
 }
 
 /**
@@ -24,8 +25,8 @@ const tableHeader = (headerCells) => {
     myHeader = surround(TABLE_CELL_DIV, myHeader)
     // Get the total length of the header cells and create a separator that repeats that many times
     const headerSeparator = TABLE_HEADER_SEP.repeat(headerCells.length)
-    return myHeader + SECTION_LINE_BREAK + headerSeparator
+    return myHeader + '\n' + headerSeparator
 }
 
 // Export the tableRow and tableHeader functions
-module.exports = { tableRow, tableHeader }
+module.exports = { tableRows, tableHeader }

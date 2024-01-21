@@ -22,12 +22,10 @@
 
 ## Key Web Links
 
- | Web Link | 
- |  ---  | 
- |  [Wikipedia for Aha!](Unknown)  | 
- |  [Aha! on Google News](https://news.google.com/search?q=Aha!)  | 
- |  [Map for Aha!](https://www.google.com/maps/place/20%20Gloria%20Cir%20Menlo%20Park%20CA%2094025%20USA)  | 
- |  [Aha! Patents](https://patents.google.com/?assignee=Aha!)  | 
+*  [Wikipedia for Aha!](Unknown) 
+*  [Aha! on Google News](https://news.google.com/search?q=Aha!) 
+*  [Map for Aha!](https://www.google.com/maps/place/20%20Gloria%20Cir%20Menlo%20Park%20CA%2094025%20USA) 
+*  [Aha! Patents](https://patents.google.com/?assignee=Aha!) 
 
 
 ## Location

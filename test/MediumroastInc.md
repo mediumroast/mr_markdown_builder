@@ -18,12 +18,10 @@
 
 ## Key Web Links
 
- | Web Link | 
- |  ---  | 
- |  [Wikipedia for Mediumroast, Inc.](Unknown)  | 
- |  [Mediumroast, Inc. on Google News](https://news.google.com/search?q=Mediumroast%2C%20Inc.)  | 
- |  [Map for Mediumroast, Inc.](https://www.google.com/maps/place/11909%20Sunshine%20Peak%20Ct.%20San%20Diego%20CA%2092131%20USA)  | 
- |  [Mediumroast, Inc. Patents](https://patents.google.com/?assignee=Mediumroast%2C%20Inc.)  | 
+*  [Wikipedia for Mediumroast, Inc.](Unknown) 
+*  [Mediumroast, Inc. on Google News](https://news.google.com/search?q=Mediumroast%2C%20Inc.) 
+*  [Map for Mediumroast, Inc.](https://www.google.com/maps/place/11909%20Sunshine%20Peak%20Ct.%20San%20Diego%20CA%2092131%20USA) 
+*  [Mediumroast, Inc. Patents](https://patents.google.com/?assignee=Mediumroast%2C%20Inc.) 
 
 
 ## Location

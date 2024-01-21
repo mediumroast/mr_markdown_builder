@@ -18,18 +18,16 @@
 
 ## Key Web Links
 
- | Web Link | 
- |  ---  | 
- |  [Wikipedia for Atlassian Corp](https://en.wikipedia.org/wiki/Atlassian)  | 
- |  [Atlassian Corp on Google News](https://news.google.com/search?q=Atlassian%20Corp)  | 
- |  [Map for Atlassian Corp](https://www.google.com/maps/place/350%20Bush%20St%2C%20Floor%2013%2C%20San%20Francisco%2C%20California%2C%2094104)  | 
- |  [Atlassian Corp Patents](https://patents.google.com/?assignee=Atlassian%20Corp)  | 
- |  [Google Finance](https://www.google.com/finance/quote/TEAM:Nasdaq)  | 
- |  [Most Recent 10-k Filing](https://www.sec.gov/Archives/edgar/data/1650372/000165037223000024/0001650372-23-000024-index.html)  | 
- |  [Most Recent 10-Q Filing](https://www.sec.gov/Archives/edgar/data/1650372/000165037223000040/0001650372-23-000040-index.html)  | 
- |  [SEC EDGAR Firmographics](https://data.sec.gov/submissions/CIK0001650372.json)  | 
- |  [All Filings for Atlassian Corp](https://www.sec.gov/cgi-bin/browse-edgar?CIK=1650372&action=getcompany)  | 
- |  [Shareholder Transactions](undefined)  | 
+*  [Wikipedia for Atlassian Corp](https://en.wikipedia.org/wiki/Atlassian) 
+*  [Atlassian Corp on Google News](https://news.google.com/search?q=Atlassian%20Corp) 
+*  [Map for Atlassian Corp](https://www.google.com/maps/place/350%20Bush%20St%2C%20Floor%2013%2C%20San%20Francisco%2C%20California%2C%2094104) 
+*  [Atlassian Corp Patents](https://patents.google.com/?assignee=Atlassian%20Corp) 
+*  [Google Finance](https://www.google.com/finance/quote/TEAM:Nasdaq) 
+*  [Most Recent 10-k Filing](https://www.sec.gov/Archives/edgar/data/1650372/000165037223000024/0001650372-23-000024-index.html) 
+*  [Most Recent 10-Q Filing](https://www.sec.gov/Archives/edgar/data/1650372/000165037223000040/0001650372-23-000040-index.html) 
+*  [SEC EDGAR Firmographics](https://data.sec.gov/submissions/CIK0001650372.json) 
+*  [All Filings for Atlassian Corp](https://www.sec.gov/cgi-bin/browse-edgar?CIK=1650372&action=getcompany) 
+*  [Shareholder Transactions](undefined) 
 
 
 ## Location

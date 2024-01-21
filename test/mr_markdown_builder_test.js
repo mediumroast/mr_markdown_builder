@@ -68,11 +68,10 @@ const createGeojson = (company) => {
 }
 
 // Create a function that takes the company object and creates a table from several of the company properties which switch based upon the company type being public or not public. The properties for both public and not public are: wikipedia_url, google_news_url, google_maps_url, google_patents_url. The properties specific to public are google_finance_url, recent10k_url, recent10q_url, firmographics_url, filings_url and owner_transactions.
-const createCompanyTable = (company) => {
-    // Create the table header
-    const tableHeader = mrMarkdownBuilder.tableHeader(['Web Link'])
+const createCompanyWebLinkList = (company) => {
+
     // Create the table rows
-    const tableRows = [
+    let listItems = [
         [mrMarkdownBuilder.link(`Wikipedia for ${company.name}`, company.wikipedia_url)],
         [mrMarkdownBuilder.link(`${company.name} on Google News`, company.google_news_url)],
         [mrMarkdownBuilder.link(`Map for ${company.name}`, company.google_maps_url)],
@@ -80,7 +79,7 @@ const createCompanyTable = (company) => {
     ]
     // If the company is public then add the public properties
     if (company.company_type === 'Public') {
-        tableRows.push(
+        listItems.push(
             [mrMarkdownBuilder.link(`Google Finance`, company.google_finance_url)],
             [mrMarkdownBuilder.link(`Most Recent 10-k Filing`, company.recent10k_url)],
             [mrMarkdownBuilder.link(`Most Recent 10-Q Filing`, company.recent10q_url)],
@@ -90,7 +89,7 @@ const createCompanyTable = (company) => {
         )
     }
     // Create the table
-    return mrMarkdownBuilder.h2('Key Web Links') + "\n" + tableHeader + "\n" + mrMarkdownBuilder.tableRows(tableRows)
+    return mrMarkdownBuilder.h2('Key Web Links') + "\n" + mrMarkdownBuilder.ul(listItems)
 }
 
 
@@ -128,7 +127,7 @@ const createCompanyFiles = (companies, interactions) => {
     companyFile += "\n"
 
     // Create the company table
-    companyFile += createCompanyTable(company)
+    companyFile += createCompanyWebLinkList(company)
 
     // Add a line break
     companyFile += "\n"

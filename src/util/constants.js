@@ -20,7 +20,7 @@ const HORIZONTAL_RULE = '---'
 const QUOTE = '> '
 
 const TABLE_CELL_DIV = ' | '
-const TABLE_HEADER_SEP = ' |---| '
+const TABLE_HEADER_SEP = ' | --- | '
 
 const INLINE_CODE = '`'
 const CODE_BLOCK = '```'

@@ -23,7 +23,7 @@
 ## Key Web Links
 
  | Property | Value | 
- |---|  |---| 
+ | --- |  | --- | 
  | Wikipedia |  [Unknown](Unknown)  | 
  | Google News |  [https://news.google.com/search?q=Aha!](https://news.google.com/search?q=Aha!)  | 
  | Google Maps |  [https://www.google.com/maps/place/20%20Gloria%20Cir%20Menlo%20Park%20CA%2094025%20USA](https://www.google.com/maps/place/20%20Gloria%20Cir%20Menlo%20Park%20CA%2094025%20USA)  | 

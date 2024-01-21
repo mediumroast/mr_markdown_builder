@@ -19,7 +19,7 @@
 ## Key Web Links
 
  | Property | Value | 
- |---|  |---| 
+ | --- |  | --- | 
  | Wikipedia |  [https://en.wikipedia.org/wiki/Atlassian](https://en.wikipedia.org/wiki/Atlassian)  | 
  | Google News |  [https://news.google.com/search?q=Atlassian%20Corp](https://news.google.com/search?q=Atlassian%20Corp)  | 
  | Google Maps |  [https://www.google.com/maps/place/350%20Bush%20St%2C%20Floor%2013%2C%20San%20Francisco%2C%20California%2C%2094104](https://www.google.com/maps/place/350%20Bush%20St%2C%20Floor%2013%2C%20San%20Francisco%2C%20California%2C%2094104)  | 

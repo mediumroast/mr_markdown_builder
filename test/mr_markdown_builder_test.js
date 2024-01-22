@@ -156,6 +156,32 @@ const createCompanyFiles = (companies, interactions) => {
   }
 }
 
+// Create a function that takes all companies and plots them on a map using the geojson method from the markdown instance. The map should be centered on the United States and should have a zoom level of 3.
+const createMap = (companies) => {
+    // Create the map
+    let map = mrMarkdownBuilder.h1('Company Locations')
+    map += mrMarkdownBuilder.geojson({
+        type: 'FeatureCollection',
+        features: companies.map((company) => {
+            return {
+                type: 'Feature',
+                geometry: {
+                    type: 'Point',
+                    coordinates: [company.longitude, company.latitude]
+                },
+                properties: {
+                    name: company.name,
+                    description: company.description,
+                    role: company.role,
+                    url: company.url
+                }
+            }
+        })
+    })
+    // return the map
+    return map
+}
+
 // Create a function that takes all companies and constructs a README.md file with a table of contents and a link to each company file followed by the company description in a table. The table should have the following columns: Company Name, Company Type, Company Role, Company Region.
 const createReadme = (companies) => {
     let readme = mrMarkdownBuilder.h1('Company Directory')
@@ -177,6 +203,10 @@ const createReadme = (companies) => {
     const companyTable = tableHeader + "\n" + mrMarkdownBuilder.tableRows(tableRows)
     // Create the README.md file
     readme += companyTable
+    // Add a line break
+    readme += "\n"
+    // Call the createMap function
+    readme += createMap(companies)
     // Write the file
     fs.writeFileSync('./README.md', readme)
 }

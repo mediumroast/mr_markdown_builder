@@ -33,7 +33,7 @@
 
 
 ## Location
-**Notice:** If you are using Safari the map will not display correctly. It has been tested and works with Chrome and Edge.  If there is only a single point on the map you will need to zoom out to see the actual context on the map. If you are a Safari user we and would like to help us fix this issue please contact add to the GitHub Community discussion [GeoJSON rendering is broken #19258](https://github.com/orgs/community/discussions/19258).
+**Notice:** If you are using Safari the map will not display correctly. It has been tested and works with Chrome and Edge.  If there is only a single point on the map you will need to zoom out to see the actual context on the map. If you are a Safari user and would like to help us fix this issue please add to the GitHub Community discussion [GeoJSON rendering is broken #19258](https://github.com/orgs/community/discussions/19258).
 ```geojson
 {
   "type": "Feature",

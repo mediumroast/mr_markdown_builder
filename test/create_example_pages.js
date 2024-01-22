@@ -48,7 +48,7 @@ const createInteractionList = (company, interactions) => {
 // Create a function that company object and creates a geojson object for the company including the header and the geojson object
 const createGeojson = (company) => {
     let geoJsonMarkdown = mrMarkdownBuilder.h2('Location')
-    geoJsonMarkdown += `**Notice:** If you are using Safari the map will not display correctly. It has been tested and works with Chrome and Edge.  If there is only a single point on the map you will need to zoom out to see the actual context on the map. If you are a Safari user we and would like to help us fix this issue please contact add to the GitHub Community discussion [GeoJSON rendering is broken #19258](https://github.com/orgs/community/discussions/19258).\n`
+    geoJsonMarkdown += `**Notice:** If you are using Safari the map will not display correctly. It has been tested and works with Chrome and Edge.  If there is only a single point on the map you will need to zoom out to see the actual context on the map. If you are a Safari user and would like to help us fix this issue please add to the GitHub Community discussion [GeoJSON rendering is broken #19258](https://github.com/orgs/community/discussions/19258).\n`
     // Create the Industry List
     const geoJson = {
         type: 'Feature',
@@ -161,7 +161,7 @@ const createCompanyFiles = (companies, interactions) => {
 const createMap = (companies) => {
     // Create the map
     let map = mrMarkdownBuilder.h1('Company Locations')
-    map += `**Notice:** If you are using Safari the map will not display correctly. It has been tested and works with Chrome and Edge.  If there is only a single point on the map you will need to zoom out to see the actual context on the map. If you are a Safari user we and would like to help us fix this issue please contact add to the GitHub Community discussion [GeoJSON rendering is broken #19258](https://github.com/orgs/community/discussions/19258).\n`
+    map += `**Notice:** If you are using Safari the map will not display correctly. It has been tested and works with Chrome and Edge.  If there is only a single point on the map you will need to zoom out to see the actual context on the map. If you are a Safari user and would like to help us fix this issue please add to the GitHub Community discussion [GeoJSON rendering is broken #19258](https://github.com/orgs/community/discussions/19258).\n`
     map += mrMarkdownBuilder.geojson({
         type: 'FeatureCollection',
         features: companies.map((company) => {

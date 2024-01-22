@@ -1,3 +1,6 @@
+[ [Back to Company Directory](./README.md) ]
+
+---
 
 # <img src="https://www.aha.io/icons/icon-512x512.png?v=4b9222967840d785d04c63c361279f97" alt="Aha! Logo" height="25px" title="Aha!" />  [Aha!](https://www.aha.io/) 
 
@@ -20,7 +23,16 @@
  *  [How Product Managers Should Define Customer Personas | Aha! software](/Interactions/How%20Product%20Managers%20Should%20Define%20Customer%20Personas%20%7C%20Aha!%20software.pdf) 
 
 
+## Key Web Links
+
+* The Wikipedia URL is Unknown
+*  [Aha! on Google News](https://news.google.com/search?q=Aha!) 
+*  [Map for Aha!](https://www.google.com/maps/place/20%20Gloria%20Cir%20Menlo%20Park%20CA%2094025%20USA) 
+*  [Aha! Patents](https://patents.google.com/?assignee=Aha!) 
+
+
 ## Location
+**Notice:** If you are using Safari the map will not display correctly. It has been tested and works with Chrome and Edge.  If there is only a single point on the map you will need to zoom out to see the actual context on the map. If you are a Safari user and would like to help us fix this issue please add to the GitHub Community discussion [GeoJSON rendering is broken #19258](https://github.com/orgs/community/discussions/19258).
 ```geojson
 {
   "type": "Feature",
@@ -39,3 +51,6 @@
   }
 }
 ```
+
+---
+[ **Created:** 2024-01-14T00:24:57.875Z by Michael Hay | **Modified:** 2024-01-14T02:09:30.740Z ]

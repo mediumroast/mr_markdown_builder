@@ -1,3 +1,6 @@
+[ [Back to Company Directory](./README.md) ]
+
+---
 
 # <img src="https://www.productplan.com/uploads/PP-favicon.png" alt="ProductPlan Logo" height="25px" title="ProductPlan" />  [ProductPlan](https://www.productplan.com/) 
 
@@ -21,7 +24,16 @@
 *  [The_Product_Book_2nd_Edition](/Interactions/The_Product_Book_2nd_Edition.pdf) 
 
 
+## Key Web Links
+
+* The Wikipedia URL is Unknown
+*  [ProductPlan on Google News](https://news.google.com/search?q=ProductPlan) 
+*  [Map for ProductPlan](https://www.google.com/maps/place/836%20Anacapa%20Street%20Santa%20Barbara%20CA%2093101%20USA) 
+*  [ProductPlan Patents](https://patents.google.com/?assignee=ProductPlan) 
+
+
 ## Location
+**Notice:** If you are using Safari the map will not display correctly. It has been tested and works with Chrome and Edge.  If there is only a single point on the map you will need to zoom out to see the actual context on the map. If you are a Safari user and would like to help us fix this issue please add to the GitHub Community discussion [GeoJSON rendering is broken #19258](https://github.com/orgs/community/discussions/19258).
 ```geojson
 {
   "type": "Feature",
@@ -40,3 +52,6 @@
   }
 }
 ```
+
+---
+[ **Created:** 2024-01-14T03:26:42.628Z by John Goodman | **Modified:** 2024-01-14T03:41:32.216Z ]

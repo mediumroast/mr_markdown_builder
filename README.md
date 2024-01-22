@@ -1,11 +1,13 @@
-# mr_markdown_builder
-A fork of the venerable yet archived markdown-builder with general and GitHub specific improvements including:
+# Introduction
+A fork of the venerable yet archived [markdown-builder](https://github.com/Chalarangelo/markdown-builder) with improvements including, but not limited to:
 - Tables
 - Quotes
 - Task lists
 - Inline code blocks 
 - Long code blocks
 - Badges from shields.io
+- GeoJson and TopoJson support
+The motivation behind maintaining this fork is to use the result in the Mediumroast, Inc. application and we did not want to start a new module from scratch when this one already exixted.
 
 ## Usage
 ```bash
@@ -104,4 +106,7 @@ misc.quote('A quote')
 	<summary>Summary</summary>
 	Content
 </details>
+
+# Example
+You can check out [./test/README.md](./test/README.md) for an example of the module in action, which is created via the test script [./test/create_example_pages.js](./test/create_example_pages.js) within the test directory.  
 

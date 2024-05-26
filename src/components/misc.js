@@ -55,7 +55,7 @@ const badge = (label, message, color='blue', style='?style=for-the-badge') => {
 }
 
 // Create a static badge function
-const tag = (label, color='purple', style='?style=for-the-badge') => {
+const tag = (label, color='blue', style='?style=for-the-badge') => {
   label = encodeURIComponent(label)
   const url = `https://img.shields.io/badge/${label}-${color}${style}`
   return image(label, url)
@@ -70,6 +70,12 @@ const rightArrow = () => '&#8594;'
 // Create a left arrow function
 const leftArrow = () => '&#8592;'
 
+// Create a space function
+const space = () => '&nbsp;'
+
+// Create a carriage return function
+const cr = () => '\n'
+
 module.exports = { 
   hr, 
   collapsible, 
@@ -83,5 +89,7 @@ module.exports = {
   upArrow,
   downArrow,
   rightArrow,
-  leftArrow 
+  leftArrow,
+  space,
+  cr
 }

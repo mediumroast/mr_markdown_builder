@@ -8,7 +8,7 @@ There are currently `5` companies in the repository. The table below lists all a
  | Company Name | Company Type | Company Role | Company Region | 
  |  ---  |  ---  |  ---  |  ---  | 
  |  [Mediumroast, Inc.](./MediumroastInc.md)  | Private | Owner | AMER | 
- |  [Atlassian Corp](./AtlassianCorp.md)  | Public company | Competitor | AMER | 
+ |  [Atlassian Corp](./AtlassianCorp.md)  | Public | Competitor | AMER | 
  |  [monday.com Ltd.](./mondaycomLtd.md)  | Public | Competitor | EMEA | 
  |  [HUBSPOT INC](./HUBSPOTINC.md)  | Public | Competitor | AMER | 
  |  [Aha! Labs Inc.](./AhaLabsInc.md)  | Private | Competitor | AMER | 

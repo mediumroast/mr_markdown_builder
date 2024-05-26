@@ -14,8 +14,14 @@ There are currently `5` companies in the repository. The table below lists all a
  |  [Aha! Labs Inc.](./AhaLabsInc.md)  | Private | Competitor | AMER | 
 
 
+---
+
+
+
 # Company Locations
-**Notice:** If you are using Safari and had previously disabled `Prevent cross-site tracking` feature in the `Privacy tab` in Safari's preferences, you can now reenable it since this bug has been fixed by GitHub.```geojson
+**Notice:** If you are using Safari and had previously disabled `Prevent cross-site tracking` feature in the `Privacy tab` in Safari's preferences, you can now reenable it since this bug has been fixed by GitHub.
+
+```geojson
 {
   "type": "FeatureCollection",
   "features": [

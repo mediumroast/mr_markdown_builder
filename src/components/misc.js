@@ -49,7 +49,15 @@ const quote = (text) => withPrefix(QUOTE, text)
 
 // Create a static badge function
 const badge = (label, message, color='blue', style='?style=for-the-badge') => {
+  label = encodeURIComponent(label)
   const url = `https://img.shields.io/badge/${label}-${message}-${color}${style}`
+  return image(label, url)
+}
+
+// Create a static badge function
+const tag = (label, color='purple', style='?style=for-the-badge') => {
+  label = encodeURIComponent(label)
+  const url = `https://img.shields.io/badge/${label}-${color}${style}`
   return image(label, url)
 }
 
@@ -69,7 +77,8 @@ module.exports = {
   link, 
   image, 
   quote, 
-  badge, 
+  badge,
+  tag, 
   imageWithSize,
   upArrow,
   downArrow,

@@ -108,5 +108,5 @@ misc.quote('A quote')
 </details>
 
 # Example
-You can check out [./test/README.md](./test/README.md) for an example of the module in action, which is created via the test script [./test/create_example_pages.js](./test/create_example_pages.js) within the test directory.  
+You can check out [./examples/README.md](./examples/README.md) for an example of the module in action, which is created via the test script [./test/create_example_pages.js](./test/create_example_pages.js) within the test directory.  
 

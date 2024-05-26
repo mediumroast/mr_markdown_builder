@@ -1,0 +1,56 @@
+[ [Back to Company Directory](./README.md) ]
+
+---
+
+# <img src="https://www.atlassian.com/apple-touch-icon.png" alt="Atlassian Corp Logo" height="25px" title="Atlassian Corp" />  [Atlassian Corp](https://www.atlassian.com/) 
+
+
+![Role](https://img.shields.io/badge/Role-Competitor-blue?style=for-the-badge)NaN![Type](https://img.shields.io/badge/Type-Public%20company-blue?style=for-the-badge)NaN![Region](https://img.shields.io/badge/Region-AMER-blue?style=for-the-badge)NaN![Creator](https://img.shields.io/badge/Creator-Michael%20Hay-blue?style=for-the-badge)
+
+**Description:** Atlassian Corporation is an Australian-American software company that develops products for software developers, and project managers among other groups. The company is domiciled in Delaware, with global headquarters in Sydney, Australia, and US headquarters in San Francisco.  In the fourth fiscal quarter of 2022, Atlassian reported serving 242,623 customers in over 190 countries, with 10 million monthly active users. As of June 2022, the company had 8,813 employees across 13 countries.
+
+### Standard Industry Code (SIC) Details
+
+* **Major Group** &#8594; Business Services (Code: 73)
+* **Industry Group** &#8594; Computer Programming, Data Processing, And Other Computer Related Services (Code: 737)
+* **Industry** &#8594; Prepackaged Software (Code: 7372)
+
+---
+
+
+## Interactions
+ 
+ *  [Confluence vs SharePoint - When to use which? - Work Life by Atlassian](/Interactions/Confluence%20vs%20SharePoint%20-%20When%20to%20use%20which?%20-%20Work%20Life%20by%20Atlassian.pdf) 
+*  [TEAM-Q1-2024-Shareholder-Letter](/Interactions/TEAM-Q1-2024-Shareholder-Letter.pdf) 
+
+
+## Key Web Links
+
+*  [Wikipedia for Atlassian Corp](https://en.wikipedia.org/wiki/Atlassian) 
+*  [Atlassian Corp on Google News](https://news.google.com/search?q=Atlassian%20Corp) 
+*  [Map for Atlassian Corp](https://www.google.com/maps/place/350%20Bush%20St%2C%20Floor%2013%2C%20San%20Francisco%2C%20California%2C%2094104) 
+*  [Atlassian Corp Patents](https://patents.google.com/?assignee=Atlassian%20Corp) 
+
+
+## Location
+**Notice:** If you are using Safari and had previously disabled `Prevent cross-site tracking` feature in the `Privacy tab` in Safari's preferences, you can now reenable it since this bug has been fixed by GitHub.```geojson
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -122.403374976666,
+      37.791121018953
+    ]
+  },
+  "properties": {
+    "name": "Atlassian Corp",
+    "description": "Atlassian Corporation is an Australian-American software company that develops products for software developers, and project managers among other groups. The company is domiciled in Delaware, with global headquarters in Sydney, Australia, and US headquarters in San Francisco.  In the fourth fiscal quarter of 2022, Atlassian reported serving 242,623 customers in over 190 countries, with 10 million monthly active users. As of June 2022, the company had 8,813 employees across 13 countries.",
+    "role": "Competitor",
+    "url": "https://www.atlassian.com/"
+  }
+}
+```
+
+---
+[ **Created:** 2024-03-15T03:51:12.680Z by Michael Hay | **Modified:** 2024-05-22T12:20:24.357Z ]

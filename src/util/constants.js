@@ -19,6 +19,8 @@ const HORIZONTAL_RULE = '---'
 
 const QUOTE = '> '
 
+const SPACE = '&nbsp;'
+
 const TABLE_CELL_DIV = ' | '
 const TABLE_HEADER_SEP = ' --- '
 
@@ -46,6 +48,7 @@ module.exports = {
   SECTION_LINE_BREAK,
   HORIZONTAL_RULE,
   QUOTE,
+  SPACE,
   TABLE_CELL_DIV,
   TABLE_HEADER_SEP,
   INLINE_CODE,

@@ -1,7 +1,7 @@
 const mrMarkdownBuilder = require('../src/index.js')
 
 // Globals
-const MAPS_WARNING = `**Notice:** If you are using Safari and had previously disabled \`Prevent cross-site tracking\` feature in the \`Privacy tab\` in Safari's preferences, you can now reenable it since this bug has been fixed by GitHub.`
+const MAPS_WARNING = `**Notice:** If you are using Safari and had previously disabled \`Prevent cross-site tracking\` feature in the \`Privacy tab\` in Safari's preferences, you can now reenable it since this bug has been fixed by GitHub.${mrMarkdownBuilder.cr()}${mrMarkdownBuilder.cr()}`
 
 function createCompaniesMap (companies) {
     // Filter out companies with unknown latitude or longitude
@@ -28,7 +28,7 @@ function createCompaniesMap (companies) {
         })
     })
     // return the map
-    return map
+    return mrMarkdownBuilder.cr() + map
 }
 
 function createCompaniesReport (companies) {
@@ -54,9 +54,9 @@ function createCompaniesReport (companies) {
     // Create the README.md file
     readme += companyTable
     // Add a line break
-    readme += "\n"
+    readme += mrMarkdownBuilder.cr() + mrMarkdownBuilder.hr()
     // Call the createMap function
-    readme += createCompaniesMap(companies)
+    readme += mrMarkdownBuilder.cr() + createCompaniesMap(companies)
     // Return the file content
     return readme
 

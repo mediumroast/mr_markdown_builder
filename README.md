@@ -7,6 +7,7 @@ A fork of the venerable yet archived [markdown-builder](https://github.com/Chala
 - Long code blocks
 - Badges from shields.io
 - GeoJson and TopoJson support
+- Collapsible summary/details blocks
 The motivation behind maintaining this fork is to use the result in the Mediumroast, Inc. application and we did not want to start a new module from scratch when this one already exixted.
 
 ## Usage
@@ -107,6 +108,6 @@ misc.quote('A quote')
 	Content
 </details>
 
-# Example
-You can check out [./examples/README.md](./examples/README.md) for an example of the module in action, which is created via the test script [./test/create_example_pages.js](./test/create_example_pages.js) within the test directory.  
+# Examples
+You can check out [./examples/README.md](./examples/README.md) for an example of the module in action, which is created via the test script [./examples/index.js](./examples/index.js), including the related modules, within the [examples](./examples) directory.  
 

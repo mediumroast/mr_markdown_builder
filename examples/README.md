@@ -30,8 +30,8 @@ See the  [examples index](./INDEX.md)  for a full list of every generated exampl
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -117.078046,
-          32.934771
+          -117.152372,
+          32.727221
         ]
       },
       "properties": {

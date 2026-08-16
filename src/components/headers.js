@@ -22,4 +22,4 @@ const h4 = (text) => hX(4, text);
 const h5 = (text) => hX(5, text);
 const h6 = (text) => hX(6, text);
 
-module.exports = { h1, h2, h3, h4, h5, h6 }
+module.exports = { hX, h1, h2, h3, h4, h5, h6 }

@@ -14,7 +14,7 @@ const geojson = (geojson) => {
 // Create a function for topojson code blocks, that takes a topojson object and returns a code block
 const topojson = (topojson) => {
   const code = JSON.stringify(topojson, null, 2)
-  return surround(CODE_BLOCK, CODE_BLOCK_TOPOJSON, code)
+  return codeBlock(CODE_BLOCK, CODE_BLOCK_TOPOJSON, code)
 }
 
 // Export the geojson and topojson functions

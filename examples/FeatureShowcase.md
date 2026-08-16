@@ -107,9 +107,12 @@ This line follows a hard break.
 
 ### Math: mathInline and mathBlock
 $E = mc^2$
+
+
 $$
 \sum_{i=1}^{n} i = \frac{n(n+1)}{2}
 $$
+
 
 ### comment (renders nothing visible)
 <!-- This is only visible in the raw markdown source. -->

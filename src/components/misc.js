@@ -125,7 +125,13 @@ const namedAnchor = (name) => `<a name="${name}"></a>`
 
 // Render inline and block mathematical expressions (LaTeX)
 const mathInline = (expr) => surround(MATH_INLINE_DELIMITER, expr)
-const mathBlock = (expr) => `${MATH_BLOCK_DELIMITER}\n${expr}\n${MATH_BLOCK_DELIMITER}`
+
+// Unlike fenced code blocks, GitHub's $$ math delimiter does not interrupt a
+// paragraph -- without a blank line before it, it's swallowed into whatever
+// text precedes it instead of rendering as a display math block. Guarantee
+// that isolation here (mirroring how collapsible() guarantees its own),
+// rather than relying on every caller to remember to add one.
+const mathBlock = (expr) => `${SECTION_LINE_BREAK}${SECTION_LINE_BREAK}${MATH_BLOCK_DELIMITER}\n${expr}\n${MATH_BLOCK_DELIMITER}${SECTION_LINE_BREAK}`
 
 module.exports = {
   hr,

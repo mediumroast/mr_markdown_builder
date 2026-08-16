@@ -58,9 +58,12 @@ This line ends with a hard break from `br()`, so this text starts on a new line 
 
 ## Math
 Inline: $E = mc^2$
+
+
 $$
 \sum_{i=1}^{n} i = \frac{n(n+1)}{2}
 $$
+
 
 ## Comments
 <!-- This paragraph is invisible in the rendered output. -->

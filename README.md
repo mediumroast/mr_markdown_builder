@@ -147,7 +147,10 @@ markdown.colorSwatch('#1d9bf0') // `#1d9bf0` — GitHub renders a swatch next to
 
 // Math (LaTeX)
 markdown.mathInline('E = mc^2') // $E = mc^2$
-markdown.mathBlock('E = mc^2') // $$\nE = mc^2\n$$
+// mathBlock() prepends a blank line: unlike fenced code blocks, GitHub's $$
+// delimiter doesn't interrupt a paragraph, so without one it gets absorbed
+// into whatever text comes before it instead of rendering as a math block
+markdown.mathBlock('E = mc^2') // \n\n$$\nE = mc^2\n$$\n
 
 // Hide content in the rendered output
 markdown.comment('not visible when rendered')

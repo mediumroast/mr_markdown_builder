@@ -156,6 +156,12 @@ describe('misc', () => {
   })
 
   test('mathBlock wraps an expression in double dollar signs on their own lines', () => {
-    expect(mathBlock('E=mc^2')).toBe('$$\nE=mc^2\n$$')
+    expect(mathBlock('E=mc^2')).toBe('\n\n$$\nE=mc^2\n$$\n')
+  })
+
+  test('mathBlock is preceded by a blank line so GitHub renders it as a display block instead of swallowing it into the preceding paragraph', () => {
+    const doc = mathInline('E=mc^2') + '\n' + mathBlock('x')
+    const paragraphBeforeBlock = doc.split(/\n\s*\n/)[0]
+    expect(paragraphBeforeBlock).toBe(mathInline('E=mc^2'))
   })
 })

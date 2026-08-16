@@ -30,6 +30,15 @@ function createIndustryList(company) {
     return industryList
 }
 
+// The source data is inconsistent about whether URLs are already
+// percent-encoded (e.g. "...q=Atlassian%20Corp") or raw (e.g. a maps
+// address with literal spaces, which markdown link syntax can't handle
+// unescaped). Only escape literal spaces rather than running the whole
+// string through encodeURI/decodeURI: those aren't a true inverse pair
+// for reserved characters like a comma's "%2C", so round-tripping an
+// already-encoded URL through them corrupts it into "%252C".
+const normalizeUrl = (url) => url.replace(/ /g, '%20')
+
 function createCompanyWebLinkList(company) {
     // Create the table rows
     let wikipediaURL
@@ -39,9 +48,9 @@ function createCompanyWebLinkList(company) {
     let listItems = [
 
         [wikipediaURL],
-        [mrMarkdownBuilder.link(`${company.name} on Google News`, encodeURIComponent(company.google_news_url))],
-        [mrMarkdownBuilder.link(`Map for ${company.name}`, encodeURIComponent(company.google_maps_url))],
-        [mrMarkdownBuilder.link(`${company.name} Patents`, encodeURIComponent(company.google_patents_url))]
+        [mrMarkdownBuilder.link(`${company.name} on Google News`, normalizeUrl(company.google_news_url))],
+        [mrMarkdownBuilder.link(`Map for ${company.name}`, normalizeUrl(company.google_maps_url))],
+        [mrMarkdownBuilder.link(`${company.name} Patents`, normalizeUrl(company.google_patents_url))]
     ]
     // If the company is public then add the public properties
     if (company.company_type === 'Public') {
@@ -53,11 +62,11 @@ function createCompanyWebLinkList(company) {
             filings_url: `All Filings for ${company.name}`,
             owner_transactions_url: 'Shareholder Transactions'
         }
-        for (const property in [
+        for (const property of [
             'google_finance_url', 'recent10k_url', 'recent10q_url', 'firmographics_url', 'filings_url', 'owner_transactions_url']
         ) {
-            if (company[property] !== 'Unknown') { continue }
-            listItems.push([mrMarkdownBuilder.link(propertyToName[property], company[property])])
+            if (!company[property] || company[property] === 'Unknown') { continue }
+            listItems.push([mrMarkdownBuilder.link(propertyToName[property], normalizeUrl(company[property]))])
         }
     }
     // Create the table

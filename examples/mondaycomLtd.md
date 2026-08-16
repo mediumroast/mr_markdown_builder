@@ -253,9 +253,10 @@ monday.com announces the launch of mondaydb 1.0, the next version of the company
 ## Key Web Links
 
 *  [Wikipedia for monday.com Ltd.](https://en.wikipedia.org/wiki/Monday.com) 
-*  [monday.com Ltd. on Google News](https%3A%2F%2Fnews.google.com%2Fsearch%3Fq%3Dmonday.com%2520Ltd.) 
-*  [Map for monday.com Ltd.](https%3A%2F%2Fwww.google.com%2Fmaps%2Fplace%2FTel%2520Aviv%2520Israel) 
-*  [monday.com Ltd. Patents](https%3A%2F%2Fpatents.google.com%2F%3Fassignee%3Dmonday.com%2520Ltd.) 
+*  [monday.com Ltd. on Google News](https://news.google.com/search?q=monday.com%20Ltd.) 
+*  [Map for monday.com Ltd.](https://www.google.com/maps/place/Tel%20Aviv%20Israel) 
+*  [monday.com Ltd. Patents](https://patents.google.com/?assignee=monday.com%20Ltd.) 
+*  [Google Finance](https://www.google.com/finance/quote/MNDY:nasdaq) 
 
 
 ## Location

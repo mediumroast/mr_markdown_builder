@@ -165,9 +165,9 @@ What you create today represents the future of the business. Value-based product
 ## Key Web Links
 
 *  [Wikipedia for Aha! Labs Inc.](https://en.wikipedia.org/wiki/Aha!_(company)) 
-*  [Aha! Labs Inc. on Google News](https%3A%2F%2Fnews.google.com%2Fsearch%3Fq%3DAha!%2520Labs%2520Inc.) 
-*  [Map for Aha! Labs Inc.](https%3A%2F%2Fwww.google.com%2Fmaps%2Fplace%2F20%20Gloria%20Circle%20Menlo%20Park%20CA%2094025%20USA) 
-*  [Aha! Labs Inc. Patents](https%3A%2F%2Fpatents.google.com%2F%3Fassignee%3DAha!%2520Labs%2520Inc.) 
+*  [Aha! Labs Inc. on Google News](https://news.google.com/search?q=Aha!%20Labs%20Inc.) 
+*  [Map for Aha! Labs Inc.](https://www.google.com/maps/place/20%20Gloria%20Circle%20Menlo%20Park%20CA%2094025%20USA) 
+*  [Aha! Labs Inc. Patents](https://patents.google.com/?assignee=Aha!%20Labs%20Inc.) 
 
 
 ## Location

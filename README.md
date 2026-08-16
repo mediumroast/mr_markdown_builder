@@ -73,6 +73,13 @@ markdown.tl(a, (item) => item.toUpperCase())
 markdown.tl([{ text: 'Done', checked: true }, { text: 'Not done', checked: false }])
 // - [x] Done
 // - [ ] Not done
+
+// Nesting: embed a rendered ul()/ol()/tl() call inside an item's text —
+// continuation lines are automatically indented to stay part of that item
+markdown.ul([`Parent item\n${markdown.ul(['Nested A', 'Nested B']).trimEnd()}`])
+// * Parent item
+//   * Nested A
+//   * Nested B
 ```
 
 ### Tables
@@ -115,6 +122,11 @@ markdown.quote('Line 1\nLine 2')
 // GitHub alert: a blockquote with a [!TYPE] marker. type must be one of
 // NOTE, TIP, IMPORTANT, WARNING, or CAUTION
 markdown.alert('NOTE', 'Something worth calling out.')
+
+// Footnotes: an inline reference, and the definitions block rendered wherever
+// you place it (there's no auto-numbering — you supply each id)
+markdown.footnoteRef('1') // [^1]
+markdown.footnoteDefs([{ id: '1', text: 'The footnote text.' }]) // [^1]: The footnote text.
 
 // Named anchor, independent of any heading
 markdown.namedAnchor('my-anchor') // <a name="my-anchor"></a>
@@ -172,9 +184,9 @@ npm run examples
 Individually:
 - [Feature Showcase](./examples/FeatureShowcase.md) — every exported function, in one page (`node examples/feature-showcase.js`)
 - [Headers & Emphasis](./examples/HeadersAndEmphasis.md) — including fenced code blocks with a syntax-highlighting language tag (`node examples/headers-and-emphasis.js`)
-- [Lists](./examples/ListsExample.md) — ordered, unordered, and task lists, including checked task items (`node examples/lists-example.js`)
+- [Lists](./examples/ListsExample.md) — ordered, unordered, and task lists, including checked task items and nesting (`node examples/lists-example.js`)
 - [Tables](./examples/TablesExample.md) — with and without column alignment (`node examples/tables-example.js`)
-- [Links, Images & Miscellaneous](./examples/LinksAndMedia.md) — links, images, anchors, quotes, GitHub alerts, badges, underline/sub/superscript, hard breaks, mentions, issue refs, emoji, color swatches, math, and comments (`node examples/links-and-media.js`)
+- [Links, Images & Miscellaneous](./examples/LinksAndMedia.md) — links, images, anchors, quotes, GitHub alerts, footnotes, badges, underline/sub/superscript, hard breaks, mentions, issue refs, emoji, color swatches, math, and comments (`node examples/links-and-media.js`)
 - [Diagrams: GeoJSON, TopoJSON & Mermaid](./examples/GeoblocksExample.md) (`node examples/geoblocks-example.js`)
 - [Company Directory](./examples/README.md) — a more elaborate, real-world example built from JSON company/interaction data (`node examples/index.js`)
 

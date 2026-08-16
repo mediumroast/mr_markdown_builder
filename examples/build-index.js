@@ -27,7 +27,7 @@ const EXAMPLES = [
     file: 'ListsExample.md',
     script: 'lists-example.js',
     title: 'Lists',
-    description: 'Ordered, unordered, and task lists — including checked task items.',
+    description: 'Ordered, unordered, and task lists — including checked task items and nesting.',
   },
   {
     file: 'TablesExample.md',
@@ -39,7 +39,7 @@ const EXAMPLES = [
     file: 'LinksAndMedia.md',
     script: 'links-and-media.js',
     title: 'Links, Images & Miscellaneous',
-    description: 'Links, images, anchors, quotes, GitHub alerts, badges, tags, collapsible sections, underline/sub/superscript, hard breaks, mentions, issue refs, emoji, color swatches, math, and comments.',
+    description: 'Links, images, anchors, quotes, GitHub alerts, footnotes, badges, tags, collapsible sections, underline/sub/superscript, hard breaks, mentions, issue refs, emoji, color swatches, math, and comments.',
   },
   {
     file: 'GeoblocksExample.md',

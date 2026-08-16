@@ -46,11 +46,10 @@ function createCompanyWebLinkList(company) {
         wikipediaURL = `The Wikipedia URL is ${company.wikipedia_url}` :
         wikipediaURL = mrMarkdownBuilder.link(`Wikipedia for ${company.name}`, company.wikipedia_url)
     let listItems = [
-
-        [wikipediaURL],
-        [mrMarkdownBuilder.link(`${company.name} on Google News`, normalizeUrl(company.google_news_url))],
-        [mrMarkdownBuilder.link(`Map for ${company.name}`, normalizeUrl(company.google_maps_url))],
-        [mrMarkdownBuilder.link(`${company.name} Patents`, normalizeUrl(company.google_patents_url))]
+        wikipediaURL,
+        mrMarkdownBuilder.link(`${company.name} on Google News`, normalizeUrl(company.google_news_url)),
+        mrMarkdownBuilder.link(`Map for ${company.name}`, normalizeUrl(company.google_maps_url)),
+        mrMarkdownBuilder.link(`${company.name} Patents`, normalizeUrl(company.google_patents_url))
     ]
     // If the company is public then add the public properties
     if (company.company_type === 'Public') {
@@ -66,7 +65,7 @@ function createCompanyWebLinkList(company) {
             'google_finance_url', 'recent10k_url', 'recent10q_url', 'firmographics_url', 'filings_url', 'owner_transactions_url']
         ) {
             if (!company[property] || company[property] === 'Unknown') { continue }
-            listItems.push([mrMarkdownBuilder.link(propertyToName[property], normalizeUrl(company[property]))])
+            listItems.push(mrMarkdownBuilder.link(propertyToName[property], normalizeUrl(company[property])))
         }
     }
     // Create the table

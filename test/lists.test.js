@@ -46,4 +46,31 @@ describe('lists', () => {
     expect(ol([])).toBe('')
     expect(tl([])).toBe('')
   })
+
+  test('ul nests a sub-list by embedding a rendered ul() in an item', () => {
+    const nested = ul(['Sub A', 'Sub B'])
+    expect(ul([`Parent item\n${nested.trimEnd()}`, 'Sibling'])).toBe(
+      '* Parent item\n  * Sub A\n  * Sub B\n* Sibling\n'
+    )
+  })
+
+  test('ol nests a sub-list, indenting to match the parent marker width', () => {
+    const nested = ol(['Step 1', 'Step 2'])
+    expect(ol([`Phase\n${nested.trimEnd()}`, 'Other phase'])).toBe(
+      '1. Phase\n   1. Step 1\n   2. Step 2\n2. Other phase\n'
+    )
+  })
+
+  test('ol indents further for double-digit markers', () => {
+    const nested = ol(['Nested'])
+    const items = Array.from({ length: 9 }, () => 'Item')
+    items.push(`Tenth\n${nested.trimEnd()}`)
+    const result = ol(items)
+    expect(result).toContain('10. Tenth\n    1. Nested\n')
+  })
+
+  test('ul indents a nested task list embedded in an item', () => {
+    const nested = tl(['Sub task'])
+    expect(ul([`Parent\n${nested.trimEnd()}`])).toBe('* Parent\n  - [ ] Sub task\n')
+  })
 })

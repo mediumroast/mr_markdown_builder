@@ -48,6 +48,11 @@ const codeBlock = "via cb(), with a language for syntax highlighting"
 - [ ] Explicitly unchecked
 - [x] Explicitly checked
 
+### Nested lists (embed a rendered ul()/ol()/tl() in an item)
+* Parent item
+  * Nested A
+  * Nested B
+
 ## Tables
 
 ### Default (unaligned) columns
@@ -111,6 +116,10 @@ $$
 
 ### namedAnchor (a manual, non-heading anchor point)
 <a name="showcase-anchor"></a>Linkable via  [#showcase-anchor](#showcase-anchor) 
+
+### Footnotes: footnoteRef and footnoteDefs
+A claim that needs a source[^1].
+[^1]: The footnote definition, rendered wherever footnoteDefs() is called.
 
 ## GeoJSON / TopoJSON code blocks
 ```geojson

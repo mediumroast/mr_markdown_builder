@@ -6,5 +6,6 @@ const misc = require('./misc')
 const tables = require('./tables')
 const geoblocks = require('./geoblocks')
 const diagrams = require('./diagrams')
+const footnotes = require('./footnotes')
 
-module.exports = { ...headers, ...emphasis, ...lists, ...misc, ...tables, ...geoblocks, ...diagrams }
+module.exports = { ...headers, ...emphasis, ...lists, ...misc, ...tables, ...geoblocks, ...diagrams, ...footnotes }

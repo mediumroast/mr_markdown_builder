@@ -46,6 +46,8 @@ doc += markdown.tl([
   { text: 'Explicitly unchecked', checked: false },
   { text: 'Explicitly checked', checked: true },
 ])
+doc += markdown.h3('Nested lists (embed a rendered ul()/ol()/tl() in an item)')
+doc += markdown.ul([`Parent item\n${markdown.ul(['Nested A', 'Nested B']).trimEnd()}`])
 
 doc += markdown.h2('Tables')
 doc += markdown.h3('Default (unaligned) columns')
@@ -91,6 +93,9 @@ doc += markdown.h3('comment (renders nothing visible)')
 doc += markdown.comment('This is only visible in the raw markdown source.') + '\n'
 doc += markdown.h3('namedAnchor (a manual, non-heading anchor point)')
 doc += markdown.namedAnchor('showcase-anchor') + `Linkable via ${markdown.link('#showcase-anchor', '#showcase-anchor')}\n`
+doc += markdown.h3('Footnotes: footnoteRef and footnoteDefs')
+doc += `A claim that needs a source${markdown.footnoteRef('1')}.\n`
+doc += markdown.footnoteDefs([{ id: '1', text: 'The footnote definition, rendered wherever footnoteDefs() is called.' }]) + '\n'
 
 doc += markdown.h2('GeoJSON / TopoJSON code blocks')
 doc += markdown.geojson({

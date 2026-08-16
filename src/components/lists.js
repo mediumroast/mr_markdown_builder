@@ -2,17 +2,18 @@
  * Markdown Lists utilities
  */
 
-const { withPrefix } = require('../util/helpers')
+const { withIndentedPrefix } = require('../util/helpers')
 const { UNORDERED_LIST_PREFIX, TASK_LIST_PREFIX, TASK_LIST_PREFIX_CHECKED } = require('../util/constants')
 
+// Nested lists aren't a separate API: embed a rendered ul()/ol()/tl() call
+// inside an item's text (e.g. `Parent\n${ul(['Child A', 'Child B'])}`) and
+// the continuation lines are automatically indented to stay part of that
+// item, per CommonMark's list-nesting rules.
 const ul = (items, callback) => {
   let list = ''
   for (let val of items) {
-    if (callback) {
-      list += withPrefix(UNORDERED_LIST_PREFIX, callback(val)) + '\n'
-    } else {
-      list += withPrefix(UNORDERED_LIST_PREFIX, val) + '\n'
-    }
+    const content = callback ? callback(val) : val
+    list += withIndentedPrefix(UNORDERED_LIST_PREFIX, content) + '\n'
   }
   return list
 }
@@ -27,7 +28,7 @@ const tl = (items, callback) => {
     const checked = isTaskObject && !!val.checked
     const prefix = checked ? TASK_LIST_PREFIX_CHECKED : TASK_LIST_PREFIX
     const content = callback ? callback(text) : text
-    list += withPrefix(prefix, content) + '\n'
+    list += withIndentedPrefix(prefix, content) + '\n'
   }
   return list
 }
@@ -38,11 +39,8 @@ const ol = (items, callback) => {
   let counter = 1
 
   for (let val of items) {
-    if (callback) {
-      list += withPrefix(`${counter}.`, callback(val)) + '\n'
-    } else {
-      list += withPrefix(`${counter}.`, val) + '\n'
-    }
+    const content = callback ? callback(val) : val
+    list += withIndentedPrefix(`${counter}.`, content) + '\n'
     counter++
   }
   return list

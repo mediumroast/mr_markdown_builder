@@ -30,8 +30,11 @@ doc += markdown.ul([
   `${markdown.b('s()')} renders ${markdown.s('strikethrough text')}`,
   `${markdown.b('ic()')} renders ${markdown.ic('inline code')}`,
 ])
-doc += markdown.h3('cb() for a fenced code block')
-doc += markdown.cb('function greet(name) {\n  return `Hello, ${name}!`\n}')
+doc += markdown.h3('cb() for a fenced code block, with an optional language for syntax highlighting')
+doc += markdown.cb('function greet(name) {\n  return `Hello, ${name}!`\n}', 'js')
+doc += '\n'
+doc += 'Without a language, `cb()` still renders a plain fenced block:\n'
+doc += markdown.cb('No syntax highlighting here.')
 
 const outPath = path.join(__dirname, 'HeadersAndEmphasis.md')
 fs.writeFileSync(outPath, doc)

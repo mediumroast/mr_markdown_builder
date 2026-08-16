@@ -13,7 +13,8 @@ const {
   ISSUE_REF_PREFIX,
   EMOJI_DELIMITER,
   MATH_INLINE_DELIMITER,
-  MATH_BLOCK_DELIMITER
+  MATH_BLOCK_DELIMITER,
+  ALERT_TYPES
 } = require('../util/constants')
 
 const hr = () => surround(SECTION_LINE_BREAK, HORIZONTAL_RULE)
@@ -57,6 +58,15 @@ const imageWithSize = (alt, url, size, title = '') =>
 
 // Create quote function; prefixes every line so multi-line text is fully quoted
 const quote = (text) => text.split('\n').map(line => withPrefix(QUOTE, line)).join('\n')
+
+// Create a GitHub alert: a blockquote whose first line is a [!TYPE] marker.
+// type must be one of ALERT_TYPES (NOTE, TIP, IMPORTANT, WARNING, CAUTION).
+const alert = (type, text) => {
+  if (!ALERT_TYPES.includes(type)) {
+    throw new Error(`alert type must be one of ${ALERT_TYPES.join(', ')}, got "${type}"`)
+  }
+  return quote(`[!${type}]\n${text}`)
+}
 
 // Create a static badge function
 const badge = (label, message, color='blue', style='?style=for-the-badge') => {
@@ -124,6 +134,7 @@ module.exports = {
   link,
   image,
   quote,
+  alert,
   badge,
   tag,
   imageWithSize,

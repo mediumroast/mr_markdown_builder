@@ -32,6 +32,8 @@ doc += markdown.ul([
 ])
 doc += markdown.cb('const codeBlock = "via cb()"')
 doc += '\n'
+doc += markdown.cb('const codeBlock = "via cb(), with a language for syntax highlighting"', 'js')
+doc += '\n'
 
 doc += markdown.h2('Lists')
 doc += markdown.h3('Unordered (ul)')
@@ -69,6 +71,8 @@ doc += markdown.ul([
 ])
 doc += markdown.h3('Quote (multi-line)')
 doc += markdown.quote('Every line of this string\nis prefixed with a blockquote marker.') + '\n'
+doc += markdown.h3('GitHub Alert')
+doc += markdown.alert('TIP', 'alert() renders a [!TYPE] blockquote for NOTE/TIP/IMPORTANT/WARNING/CAUTION.') + '\n'
 doc += markdown.h3('Badges and tags')
 doc += markdown.badge('build', 'passing', 'brightgreen') + ' ' + markdown.tag('example') + '\n'
 doc += markdown.h3('Collapsible section')
@@ -96,6 +100,10 @@ doc += markdown.geojson({
 })
 doc += '\n'
 doc += markdown.topojson({ type: 'Topology', objects: {}, arcs: [] })
+doc += '\n'
+
+doc += markdown.h2('Mermaid diagram')
+doc += markdown.mermaid('graph TD;\n  A[Start] --> B[End];')
 doc += '\n'
 
 const outPath = path.join(__dirname, 'FeatureShowcase.md')

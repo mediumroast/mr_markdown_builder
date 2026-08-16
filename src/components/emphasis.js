@@ -2,7 +2,7 @@
  * Emphasis and code formatting components
 */
 // Desc: emphasis.js
-const surround = require('../util/helpers').surround
+const { surround, codeBlock } = require('../util/helpers')
 const { EMPHASIS_ITALICS, EMPHASIS_BOLD, EMPHASIS_STRIKETHROUGH, INLINE_CODE, CODE_BLOCK } = require('../util/constants')
 
 
@@ -32,9 +32,10 @@ const s = (text) => surround(EMPHASIS_STRIKETHROUGH, text)
 const ic = (text) => surround(INLINE_CODE, text)
 
 /**
- * Produces code block text
- * @param {string} text 
+ * Produces a fenced code block, optionally with a language tag for syntax highlighting.
+ * @param {string} text
+ * @param {string} [lang]
  */
-const cb = (text) => surround(CODE_BLOCK, text)
+const cb = (text, lang = '') => codeBlock(CODE_BLOCK, lang, text)
 
 module.exports = { i, b, s, ic, cb }

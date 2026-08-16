@@ -17,7 +17,11 @@ describe('emphasis', () => {
     expect(ic('word')).toBe('`word`')
   })
 
-  test('cb wraps text in triple backticks', () => {
-    expect(cb('word')).toBe('```word```')
+  test('cb renders a fenced code block on its own lines', () => {
+    expect(cb('word')).toBe('```\nword\n```')
+  })
+
+  test('cb accepts an optional language for syntax highlighting', () => {
+    expect(cb('const x = 1', 'js')).toBe('```js\nconst x = 1\n```')
   })
 })

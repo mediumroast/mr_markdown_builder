@@ -6,6 +6,7 @@ const {
   image,
   imageWithSize,
   quote,
+  alert,
   badge,
   tag,
   upArrow,
@@ -73,6 +74,28 @@ describe('misc', () => {
 
   test('quote prefixes every line of a multi-line string', () => {
     expect(quote('Line 1\nLine 2')).toBe('>  Line 1\n>  Line 2')
+  })
+
+  test('alert renders a GitHub alert with a [!TYPE] marker line', () => {
+    expect(alert('NOTE', 'Something worth calling out.')).toBe(
+      '>  [!NOTE]\n>  Something worth calling out.'
+    )
+  })
+
+  test('alert quotes every line of a multi-line body', () => {
+    expect(alert('WARNING', 'Line 1.\nLine 2.')).toBe(
+      '>  [!WARNING]\n>  Line 1.\n>  Line 2.'
+    )
+  })
+
+  test('alert accepts all five GitHub alert types', () => {
+    for (const type of ['NOTE', 'TIP', 'IMPORTANT', 'WARNING', 'CAUTION']) {
+      expect(alert(type, 'x')).toBe(`>  [!${type}]\n>  x`)
+    }
+  })
+
+  test('alert throws for an unrecognized type', () => {
+    expect(() => alert('BOGUS', 'x')).toThrow('alert type must be one of')
   })
 
   test('badge builds a shields.io badge URL wrapped in an image', () => {

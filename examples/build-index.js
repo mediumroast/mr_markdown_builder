@@ -21,7 +21,7 @@ const EXAMPLES = [
     file: 'HeadersAndEmphasis.md',
     script: 'headers-and-emphasis.js',
     title: 'Headers & Emphasis',
-    description: 'h1-h6, hX, bold, italic, strikethrough, inline/fenced code.',
+    description: 'h1-h6, hX, bold, italic, strikethrough, inline/fenced code (with an optional language for syntax highlighting).',
   },
   {
     file: 'ListsExample.md',
@@ -39,13 +39,13 @@ const EXAMPLES = [
     file: 'LinksAndMedia.md',
     script: 'links-and-media.js',
     title: 'Links, Images & Miscellaneous',
-    description: 'Links, images, anchors, quotes, badges, tags, collapsible sections, underline/sub/superscript, hard breaks, mentions, issue refs, emoji, color swatches, math, and comments.',
+    description: 'Links, images, anchors, quotes, GitHub alerts, badges, tags, collapsible sections, underline/sub/superscript, hard breaks, mentions, issue refs, emoji, color swatches, math, and comments.',
   },
   {
     file: 'GeoblocksExample.md',
     script: 'geoblocks-example.js',
-    title: 'GeoJSON & TopoJSON',
-    description: 'Fenced geojson/topojson code blocks that GitHub renders as maps.',
+    title: 'Diagrams: GeoJSON, TopoJSON & Mermaid',
+    description: 'Fenced geojson/topojson blocks that GitHub renders as maps, and fenced mermaid blocks that GitHub renders as diagrams.',
   },
   {
     file: 'README.md',

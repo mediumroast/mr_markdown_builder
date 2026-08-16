@@ -1,6 +1,19 @@
 // Import constants and helpers from the util folder
 const { surround } = require('../util')
-const { TABLE_CELL_DIV, TABLE_HEADER_SEP, SECTION_LINE_BREAK } = require('../util/constants')
+const {
+    TABLE_CELL_DIV,
+    TABLE_HEADER_SEP,
+    TABLE_HEADER_SEP_LEFT,
+    TABLE_HEADER_SEP_CENTER,
+    TABLE_HEADER_SEP_RIGHT,
+    SECTION_LINE_BREAK
+} = require('../util/constants')
+
+const ALIGNMENT_SEPARATORS = {
+    left: TABLE_HEADER_SEP_LEFT,
+    center: TABLE_HEADER_SEP_CENTER,
+    right: TABLE_HEADER_SEP_RIGHT
+}
 
 /**
  * @function tableRow
@@ -29,14 +42,15 @@ const tableRows = (rows) => {
  * @function tableHeader
  * @description Creates a table header based upon an array of cells
  * @param {string[]} headerCells - array of header cells
+ * @param {string[]} [alignments] - optional per-column alignment: 'left', 'center', or 'right'
  * @returns {string} table header
  */
-const tableHeader = (headerCells) => {
+const tableHeader = (headerCells, alignments) => {
     let myHeader = headerCells.join(TABLE_CELL_DIV)
     myHeader = surround(TABLE_CELL_DIV, myHeader)
-    // Get the total length of the header cells and create a separator that repeats that many times
-    // Create a list of the length of headerCells containing the TABLE_HEADER_SEP
-    let headerSeparator = new Array(headerCells.length).fill(TABLE_HEADER_SEP)
+    // Build one separator cell per header cell, using the requested alignment
+    // when one was given and falling back to the unaligned separator otherwise
+    let headerSeparator = headerCells.map((_, i) => ALIGNMENT_SEPARATORS[alignments && alignments[i]] || TABLE_HEADER_SEP)
     headerSeparator = headerSeparator.join(TABLE_CELL_DIV)
     headerSeparator = surround(TABLE_CELL_DIV, headerSeparator)
     return myHeader + '\n' + headerSeparator

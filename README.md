@@ -18,87 +18,98 @@ npm install --save mr_markdown_builder
 Using `mr_markdown_builder`:
 ```js
 const markdown = require('mr_markdown_builder')
-const { headers } = markdown
 
-headers.hX(3, '3rd Header') // ### 3rd Header
+markdown.hX(3, '3rd Header') // ### 3rd Header
 ```
 
 ## API
+
+All functions are exported flat on the top-level module — there are no `headers`/`emphasis`/`lists`/`misc` namespaces to destructure.
 
 ### Headers
 Use the `h1`,`h2`,`h3`,`h4`,`h5`,`h6` or `hX` to generate a markdown header. Calling `hX` with a level above `6` returns a `h6` Header.
 
 ```js
 const markdown = require('mr_markdown_builder')
-const { headers } = markdown
 
-headers.h1('1st Header') // # 1st Header
-headers.h2('2nd Header') // ## 2nd Header
-headers.h3('3rd Header') // ### 3rd Header
-headers.hX(5, '5th Header using hX') // ##### 5th Header using hX
+markdown.h1('1st Header') // # 1st Header
+markdown.h2('2nd Header') // ## 2nd Header
+markdown.h3('3rd Header') // ### 3rd Header
+markdown.hX(5, '5th Header using hX') // ##### 5th Header using hX
 ```
 
 ### Emphasis
 ```js
 const markdown = require('mr_markdown_builder')
-const { emphasis } = markdown
 
-emphasis.b('bold text')
-emphasis.i('italic text')
-emphasis.s('strikethrough text')
-emphasis.ic('inline code block text')
-emphasis.cb('long code block text')
+markdown.b('bold text')
+markdown.i('italic text')
+markdown.s('strikethrough text')
+markdown.ic('inline code block text')
+markdown.cb('long code block text')
 ```
 
 ### Lists
 ```js
 const markdown = require('mr_markdown_builder')
-const { lists } = markdown
 
 let a = ['Item 1', 'Item 2']
 // ordered list
-lists.ol(a)
+markdown.ol(a)
 // 1. Item 1
 // 2. Item 2
-lists.ol(a, (item) => item.toUpperCase()) // use callbacks to alter each item
+markdown.ol(a, (item) => item.toUpperCase()) // use callbacks to alter each item
 // 1. ITEM 1
 // 2. ITEM 2
 
 // unordered List
-lists.ul(a)
-lists.ul(a, (item) => item.toUpperCase())
+markdown.ul(a)
+markdown.ul(a, (item) => item.toUpperCase())
 
-// task list
-list.tl(a)
-lists.tl(a, (item) => item.toUpperCase())
+// task list — pass plain strings for unchecked items, or { text, checked } for a mix
+markdown.tl(a)
+markdown.tl(a, (item) => item.toUpperCase())
+markdown.tl([{ text: 'Done', checked: true }, { text: 'Not done', checked: false }])
+// - [x] Done
+// - [ ] Not done
+```
+
+### Tables
+```js
+const markdown = require('mr_markdown_builder')
+
+// header separator defaults to unaligned columns
+markdown.tableHeader(['Name', 'Role'])
+
+// pass 'left', 'center', or 'right' per column to align it
+markdown.tableHeader(['Name', 'Role'], ['left', 'center'])
 ```
 
 ### Miscellaneous
 
 ```js
 const markdown = require('mr_markdown_builder')
-const { misc } = markdown
 
 // Images
 let alt = 'image of lights', url = 'https://www.w3schools.com/w3css/img_lights.jpg', title = 'lights'
-misc.image(alt, url)
-misc.image(alt, url, title)
+markdown.image(alt, url)
+markdown.image(alt, url, title)
 
 // Collapsible summary/details block
-misc.collapsible('Summary', 'content');
+markdown.collapsible('Summary', 'content');
 
 // Github Anchor
-misc.anchor('A header with /*() special-characters!'); // #a-header-with--special-characters
+markdown.anchor('A header with /*() special-characters!'); // #a-header-with--special-characters
 
 // Link
-misc.link('Github', 'https://github.com/flxwu')
+markdown.link('Github', 'https://github.com/flxwu')
 
 // horizontal rule
-misc.hr()
+markdown.hr()
 
-// Quote
-misc.quote('A quote')
-
+// Quote (each line of a multi-line string is prefixed)
+markdown.quote('A quote')
+markdown.quote('Line 1\nLine 2')
 ```
 
 **Collapsible**:

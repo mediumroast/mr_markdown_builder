@@ -59,6 +59,10 @@ describe('misc', () => {
     expect(quote('A quote')).toBe('>  A quote')
   })
 
+  test('quote prefixes every line of a multi-line string', () => {
+    expect(quote('Line 1\nLine 2')).toBe('>  Line 1\n>  Line 2')
+  })
+
   test('badge builds a shields.io badge URL wrapped in an image', () => {
     expect(badge('Role', 'Owner')).toBe(
       '![Role](https://img.shields.io/badge/Role-Owner-blue?style=for-the-badge)'

@@ -5,6 +5,18 @@ describe('tables', () => {
     expect(tableHeader(['Name', 'Role'])).toBe(' | Name | Role | \n |  ---  |  ---  | ')
   })
 
+  test('tableHeader aligns columns when given an alignments array', () => {
+    expect(tableHeader(['Name', 'Role', 'Region'], ['left', 'center', 'right'])).toBe(
+      ' | Name | Role | Region | \n |  :---  |  :---:  |  ---:  | '
+    )
+  })
+
+  test('tableHeader falls back to the default separator for unspecified alignments', () => {
+    expect(tableHeader(['Name', 'Role'], ['left'])).toBe(
+      ' | Name | Role | \n |  :---  |  ---  | '
+    )
+  })
+
   test('tableRows creates one row per array entry', () => {
     const rows = [
       ['Mediumroast', 'Owner'],

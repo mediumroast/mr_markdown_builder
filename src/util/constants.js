@@ -11,6 +11,7 @@ const EMPHASIS_STRIKETHROUGH = '~~'
 const UNORDERED_LIST_PREFIX = '*'
 
 const TASK_LIST_PREFIX = '- [ ]'
+const TASK_LIST_PREFIX_CHECKED = '- [x]'
 
 const LINE_BREAK = '  '
 const SECTION_LINE_BREAK = '\n'
@@ -23,6 +24,9 @@ const SPACE = '&nbsp;'
 
 const TABLE_CELL_DIV = ' | '
 const TABLE_HEADER_SEP = ' --- '
+const TABLE_HEADER_SEP_LEFT = ' :--- '
+const TABLE_HEADER_SEP_CENTER = ' :---: '
+const TABLE_HEADER_SEP_RIGHT = ' ---: '
 
 const INLINE_CODE = '`'
 const CODE_BLOCK = '```'
@@ -51,6 +55,9 @@ module.exports = {
   SPACE,
   TABLE_CELL_DIV,
   TABLE_HEADER_SEP,
+  TABLE_HEADER_SEP_LEFT,
+  TABLE_HEADER_SEP_CENTER,
+  TABLE_HEADER_SEP_RIGHT,
   INLINE_CODE,
   CODE_BLOCK,
   CODE_BLOCK_LANG_JS,
@@ -59,5 +66,6 @@ module.exports = {
   CODE_BLOCK_GEOJSON,
   CODE_BLOCK_LANG_JSON,
   CODE_BLOCK_TOPOJSON,
-  TASK_LIST_PREFIX
+  TASK_LIST_PREFIX,
+  TASK_LIST_PREFIX_CHECKED
 }

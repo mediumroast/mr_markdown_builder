@@ -44,8 +44,8 @@ const image = (alt, url, title = '') =>
 const imageWithSize = (alt, url, size, title = '') =>
   `<img src="${url}" alt="${alt}" height="${size}px"${title !== '' ? ` title="${title}"` : ''} />`
 
-// Create quote function
-const quote = (text) => withPrefix(QUOTE, text) 
+// Create quote function; prefixes every line so multi-line text is fully quoted
+const quote = (text) => text.split('\n').map(line => withPrefix(QUOTE, line)).join('\n')
 
 // Create a static badge function
 const badge = (label, message, color='blue', style='?style=for-the-badge') => {

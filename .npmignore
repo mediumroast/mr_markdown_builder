@@ -1,0 +1,8 @@
+examples/
+test/
+Interactions/
+.github/
+.claude/
+node_modules/
+experiment.js
+.DS_Store

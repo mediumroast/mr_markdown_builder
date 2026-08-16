@@ -2,7 +2,12 @@
   "name": "mr_markdown_builder",
   "version": "0.9.0",
   "description": "A fork of the famous markdown builder for node with enhancements.",
-  "main": "index.js",
+  "main": "src/index.js",
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "test": "jest",
     "examples": "node examples/feature-showcase.js && node examples/headers-and-emphasis.js && node examples/lists-example.js && node examples/tables-example.js && node examples/links-and-media.js && node examples/geoblocks-example.js && node examples/index.js && node examples/build-index.js"

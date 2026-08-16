@@ -27,7 +27,7 @@
 ## Interactions
 `Aha! Labs Inc.` has `6` interactions in the repository, and the reading time for all interactions is `34` minutes.
 
-###  [How Product Managers Should Define Customer Personas | Aha! software](/Interactions/How%20Product%20Managers%20Should%20Define%20Customer%20Personas%20%7C%20Aha!%20software.pdf) 
+###  [How Product Managers Should Define Customer Personas | Aha! software](https://www.aha.io/roadmapping/guide/product-strategy/how-should-product-managers-define-user-personas) 
 
 
 ![Reading%20time](https://img.shields.io/badge/Reading%20time-3%20minutes-blue?style=for-the-badge)&nbsp;![Interaction%20type](https://img.shields.io/badge/Interaction%20type-Webpage-blue?style=for-the-badge)&nbsp;![Page%20count](https://img.shields.io/badge/Page%20count-4-blue?style=for-the-badge)&nbsp;![Document%20type](https://img.shields.io/badge/Document%20type-application%2Fpdf-blue?style=for-the-badge)
@@ -49,7 +49,7 @@ Product discovery is the process of figuring out exactly what people need so you
 
 
 
-###  [How Product Managers Should Do Market Research | Aha! software](/Interactions/How%20Product%20Managers%20Should%20Do%20Market%20Research%20%7C%20Aha!%20software.pdf) 
+###  [How Product Managers Should Do Market Research | Aha! software](https://www.aha.io/roadmapping/guide/marketing-strategy/market-research) 
 
 
 ![Reading%20time](https://img.shields.io/badge/Reading%20time-3%20minutes-blue?style=for-the-badge)&nbsp;![Interaction%20type](https://img.shields.io/badge/Interaction%20type-Webpage-blue?style=for-the-badge)&nbsp;![Page%20count](https://img.shields.io/badge/Page%20count-4-blue?style=for-the-badge)&nbsp;![Document%20type](https://img.shields.io/badge/Document%20type-application%2Fpdf-blue?style=for-the-badge)
@@ -71,7 +71,7 @@ Product discovery is the process of figuring out exactly what people need so you
 
 
 
-###  [How Product Managers Should Research Competitors | Aha! software](/Interactions/How%20Product%20Managers%20Should%20Research%20Competitors%20%7C%20Aha!%20software.pdf) 
+###  [How Product Managers Should Research Competitors | Aha! software](https://www.aha.io/roadmapping/guide/product-strategy/how-should-product-managers-research-competitors) 
 
 
 ![Reading%20time](https://img.shields.io/badge/Reading%20time-3%20minutes-blue?style=for-the-badge)&nbsp;![Interaction%20type](https://img.shields.io/badge/Interaction%20type-Webpage-blue?style=for-the-badge)&nbsp;![Page%20count](https://img.shields.io/badge/Page%20count-4-blue?style=for-the-badge)&nbsp;![Document%20type](https://img.shields.io/badge/Document%20type-application%2Fpdf-blue?style=for-the-badge)
@@ -93,7 +93,7 @@ Product discovery is the process of figuring out exactly what people need so you
 
 
 
-###  [Roadmapping for Product Teams — With Tips, Templates, & Example Roadmaps | Aha! software](/Interactions/Roadmapping%20for%20Product%20Teams%20%E2%80%94%20With%20Tips,%20Templates,%20&%20Example%20Roadmaps%20%7C%20Aha!%20software.pdf) 
+###  [Roadmapping for Product Teams — With Tips, Templates, & Example Roadmaps | Aha! software](Unknown) 
 
 
 ![Reading%20time](https://img.shields.io/badge/Reading%20time-13%20minutes-blue?style=for-the-badge)&nbsp;![Interaction%20type](https://img.shields.io/badge/Interaction%20type-Webpage-blue?style=for-the-badge)&nbsp;![Page%20count](https://img.shields.io/badge/Page%20count-14-blue?style=for-the-badge)&nbsp;![Document%20type](https://img.shields.io/badge/Document%20type-application%2Fpdf-blue?style=for-the-badge)
@@ -115,7 +115,7 @@ Roadmaps are a popular strategic planning method for businesses and teams of all
 
 
 
-###  [What Is Product Discovery? Tips and Best Practices To Determine Exactly What Customers Need | Aha! software](/Interactions/What%20Is%20Product%20Discovery?%20Tips%20and%20Best%20Practices%20To%20Determine%20Exactly%20What%20Customers%20Need%20%7C%20Aha!%20software.pdf) 
+###  [What Is Product Discovery? Tips and Best Practices To Determine Exactly What Customers Need | Aha! software](https://www.aha.io/roadmapping/guide/what-is-product-discovery) 
 
 
 ![Reading%20time](https://img.shields.io/badge/Reading%20time-4%20minutes-blue?style=for-the-badge)&nbsp;![Interaction%20type](https://img.shields.io/badge/Interaction%20type-Webpage-blue?style=for-the-badge)&nbsp;![Page%20count](https://img.shields.io/badge/Page%20count-4-blue?style=for-the-badge)&nbsp;![Document%20type](https://img.shields.io/badge/Document%20type-application%2Fpdf-blue?style=for-the-badge)
@@ -137,7 +137,7 @@ Product discovery is the process of figuring out exactly what people need so you
 
 
 
-###  [What Is Value-Based Product Development? | Aha! software](/Interactions/What%20Is%20Value-Based%20Product%20Development?%20%7C%20Aha!%20software.pdf) 
+###  [What Is Value-Based Product Development? | Aha! software](Unknown) 
 
 
 ![Reading%20time](https://img.shields.io/badge/Reading%20time-8%20minutes-blue?style=for-the-badge)&nbsp;![Interaction%20type](https://img.shields.io/badge/Interaction%20type-Webpage-blue?style=for-the-badge)&nbsp;![Page%20count](https://img.shields.io/badge/Page%20count-8-blue?style=for-the-badge)&nbsp;![Document%20type](https://img.shields.io/badge/Document%20type-application%2Fpdf-blue?style=for-the-badge)

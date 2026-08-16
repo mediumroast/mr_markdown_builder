@@ -1,8 +1,14 @@
 #!env node
+// Regenerates every file this script produces (examples/README.md and one
+// examples/<Company>.md per company). Safe to run from any directory:
+// `node examples/index.js` and `cd examples && node index.js` both work.
 
 const companyReporting = require('./company.js')
 const companiesReporting = require('./companies.js')
 const fs = require('fs')
+const path = require('path')
+
+const dir = (relativePath) => path.join(__dirname, relativePath)
 
 
 function readObjects (path) {
@@ -31,8 +37,8 @@ function saveReports (reports) {
 // Create the run function that creates the reports
 async function run () {
     // Define inputs
-    companiesObject = readObjects('./Companies.json')
-    interactionsObject = readObjects('./Interactions.json')
+    companiesObject = readObjects(dir('Companies.json'))
+    interactionsObject = readObjects(dir('Interactions.json'))
     // Check to see if the objects were read
     if (!companiesObject || !interactionsObject) {
         return console.error('Error reading objects, exiting...')
@@ -46,8 +52,8 @@ async function run () {
 
     // Define reports
     const reports = {
-        companies: `./README.md`,
-        company: `./`
+        companies: dir('README.md'),
+        company: __dirname + path.sep
     }
 
     // Create the company files

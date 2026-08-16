@@ -27,7 +27,7 @@
 ## Interactions
 `Atlassian Corp` has `2` interactions in the repository, and the reading time for all interactions is `48` minutes.
 
-###  [Confluence vs SharePoint - When to use which? - Work Life by Atlassian](/Interactions/Confluence%20vs%20SharePoint%20-%20When%20to%20use%20which?%20-%20Work%20Life%20by%20Atlassian.pdf) 
+###  [Confluence vs SharePoint - When to use which? - Work Life by Atlassian](https://www.atlassian.com/blog/confluence/vs-sharepoint) 
 
 
 ![Reading%20time](https://img.shields.io/badge/Reading%20time-13%20minutes-blue?style=for-the-badge)&nbsp;![Interaction%20type](https://img.shields.io/badge/Interaction%20type-Blog%20Post-blue?style=for-the-badge)&nbsp;![Page%20count](https://img.shields.io/badge/Page%20count-13-blue?style=for-the-badge)&nbsp;![Document%20type](https://img.shields.io/badge/Document%20type-application%2Fpdf-blue?style=for-the-badge)
@@ -49,7 +49,7 @@ confluence is a connected workspace for teams of all sizes that need a hub for c
 
 
 
-###  [TEAM-Q1-2024-Shareholder-Letter](/Interactions/TEAM-Q1-2024-Shareholder-Letter.pdf) 
+###  [TEAM-Q1-2024-Shareholder-Letter](https://www.atlassian.com/blog/announcements/shareholder-letter-q1fy24) 
 
 
 ![Reading%20time](https://img.shields.io/badge/Reading%20time-35%20minutes-blue?style=for-the-badge)&nbsp;![Interaction%20type](https://img.shields.io/badge/Interaction%20type-Blog%20Post-blue?style=for-the-badge)&nbsp;![Page%20count](https://img.shields.io/badge/Page%20count-24-blue?style=for-the-badge)&nbsp;![Document%20type](https://img.shields.io/badge/Document%20type-application%2Fpdf-blue?style=for-the-badge)

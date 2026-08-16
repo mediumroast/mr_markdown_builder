@@ -35,7 +35,7 @@ function createCompaniesReport (companies) {
     let readme = `[${mrMarkdownBuilder.link('Back to main README', '../README.md')}]\n`
     readme += mrMarkdownBuilder.hr()
     readme += mrMarkdownBuilder.h1('Introduction')
-    readme += `There are currently \`${companies.length}\` companies in the repository. The table below lists all available companies and some of their firmographics. Click on the company name to view the company's profile.  Below the table is a map of all companies in the repository.  Click on a company's marker to view additional company information in context.`
+    readme += `See the ${mrMarkdownBuilder.link('examples index', './INDEX.md')} for a full list of every generated example, including short, single-feature demos. This page is the more elaborate one: there are currently \`${companies.length}\` companies in the repository. The table below lists all available companies and some of their firmographics. Click on the company name to view the company's profile.  Below the table is a map of all companies in the repository.  Click on a company's marker to view additional company information in context.`
     readme += mrMarkdownBuilder.h1('Table of Companies')
     // Create the table header
     const tableHeader = mrMarkdownBuilder.tableHeader(['Company Name', 'Company Type', 'Company Role', 'Company Region'])

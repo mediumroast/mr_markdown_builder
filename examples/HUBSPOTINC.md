@@ -27,7 +27,7 @@
 ## Interactions
 `HUBSPOT INC` has `4` interactions in the repository, and the reading time for all interactions is `189` minutes.
 
-###  [HubSpot Analyst Day 2023 Consolidated Deck_FINAL_1](/Interactions/HubSpot%20Analyst%20Day%202023%20Consolidated%20Deck_FINAL_1.pdf) 
+###  [HubSpot Analyst Day 2023 Consolidated Deck_FINAL_1](https://www.hubspot.com/hubfs/HubSpot%20Analyst%20Day%202023%20Consolidated%20Deck_FINAL_1.pdf?hubs_content=www.hubspot.com%252Four-story&hubs_content-cta=nav-utility-investors&_gl=1*1thwdt9*_ga*MjQ2OTMyNjQ1LjE3MTMzMTgyMjg.*_ga_LXTM6CQ0XK*MTcxNjU1NDM5Ni40LjEuMTcxNjU1NDc0OC41OC4wLjA.) 
 
 
 ![Reading%20time](https://img.shields.io/badge/Reading%20time-18%20minutes-blue?style=for-the-badge)&nbsp;![Interaction%20type](https://img.shields.io/badge/Interaction%20type-Report-blue?style=for-the-badge)&nbsp;![Page%20count](https://img.shields.io/badge/Page%20count-100-blue?style=for-the-badge)&nbsp;![Document%20type](https://img.shields.io/badge/Document%20type-application%2Fpdf-blue?style=for-the-badge)
@@ -49,7 +49,7 @@ This presentation includes certain "forward-looking statements" within the meani
 
 
 
-###  [Hubspot_10_q](/Interactions/Hubspot_10_q.pdf) 
+###  [Hubspot_10_q](https://f.hubspotusercontent00.net/hubfs/53/wt-ir-files/PDF/17529760.pdf) 
 
 
 ![Reading%20time](https://img.shields.io/badge/Reading%20time-158%20minutes-blue?style=for-the-badge)&nbsp;![Interaction%20type](https://img.shields.io/badge/Interaction%20type-Public%20Company%20Filing-blue?style=for-the-badge)&nbsp;![Page%20count](https://img.shields.io/badge/Page%20count-68-blue?style=for-the-badge)&nbsp;![Document%20type](https://img.shields.io/badge/Document%20type-application%2Fpdf-blue?style=for-the-badge)
@@ -71,7 +71,7 @@ hubspot inc. filed a form 10-q for the period ending 03/31/24. Its address is 2 
 
 
 
-###  [Quarterly Investor Presentation Q124](/Interactions/Quarterly%20Investor%20Presentation%20Q124.pdf) 
+###  [Quarterly Investor Presentation Q124](https://knowledge.hubspot.com/hubfs/Quarterly%20Investor%20Presentation%20Q124.pdf?hubs_content=www.hubspot.com%252Four-story&hubs_content-cta=nav-utility-investors&_gl=1*1thwdt9*_ga*MjQ2OTMyNjQ1LjE3MTMzMTgyMjg.*_ga_LXTM6CQ0XK*MTcxNjU1NDM5Ni40LjEuMTcxNjU1NDc0OC41OC4wLjA.) 
 
 
 ![Reading%20time](https://img.shields.io/badge/Reading%20time-7%20minutes-blue?style=for-the-badge)&nbsp;![Interaction%20type](https://img.shields.io/badge/Interaction%20type-Report-blue?style=for-the-badge)&nbsp;![Page%20count](https://img.shields.io/badge/Page%20count-28-blue?style=for-the-badge)&nbsp;![Document%20type](https://img.shields.io/badge/Document%20type-application%2Fpdf-blue?style=for-the-badge)
@@ -93,7 +93,7 @@ This presentation includes certain "forward-looking statements" within the meani
 
 
 
-###  [Rankmi grew traffic to its website by over 882% in 9 months with HubSpot](/Interactions/Rankmi%20grew%20traffic%20to%20its%20website%20by%20over%20882%25%20in%209%20months%20with%20HubSpot.pdf) 
+###  [Rankmi grew traffic to its website by over 882% in 9 months with HubSpot](https://www.hubspot.com/case-studies/rankmi) 
 
 
 ![Reading%20time](https://img.shields.io/badge/Reading%20time-6%20minutes-blue?style=for-the-badge)&nbsp;![Interaction%20type](https://img.shields.io/badge/Interaction%20type-Case%20Study-blue?style=for-the-badge)&nbsp;![Page%20count](https://img.shields.io/badge/Page%20count-15-blue?style=for-the-badge)&nbsp;![Document%20type](https://img.shields.io/badge/Document%20type-application%2Fpdf-blue?style=for-the-badge)

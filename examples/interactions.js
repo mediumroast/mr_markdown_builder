@@ -35,9 +35,13 @@ async function createInteractionsList (company, interactions) {
             return null
         }
 
-        // Create link internal link to the interaction file    
-        const interactionLink = mrMarkdownBuilder.link(interaction.name, `/${encodeURI(interaction.url)}`)
-        
+        // Link to the interaction's original external source when we have one on record;
+        // the local `interaction.url` (e.g. "Interactions/foo.pdf") points at a source
+        // file that isn't checked into this repo, so linking to it would be a dangling
+        // reference. Fall back to plain (unlinked) text instead.
+        const sourceUrl = interaction.interaction_type_detail && interaction.interaction_type_detail.url
+        const interactionLink = sourceUrl ? mrMarkdownBuilder.link(interaction.name, sourceUrl) : interaction.name
+
         // Create the interaction section
         let interactionSection = `${mrMarkdownBuilder.h3(interactionLink)}${mrMarkdownBuilder.cr()}`
         interactionSection += await createMetadataBadges(interaction) + mrMarkdownBuilder.cr()

@@ -64,20 +64,6 @@ function createCompanyWebLinkList(company) {
     return mrMarkdownBuilder.h2('Key Web Links') + "\n" + mrMarkdownBuilder.ul(listItems)
 }
 
-function createInteractionList(company, interactions) {
-    // Create a list of interactions
-    const interactionNames = Object.keys(company.linked_interactions)
-    const interactionList = interactionNames.map((interactionName) => {
-        // Find the interaction object that matches the interaction name
-        const interaction = interactions.find((interaction) => interaction.name === interactionName)
-        // Create link internal link to the interaction file    
-        const interactionLink = mrMarkdownBuilder.link(interaction.name, `/${encodeURI(interaction.url)}`)
-        return interactionLink
-    })
-
-    return `${mrMarkdownBuilder.h2('Interactions')} \n ${mrMarkdownBuilder.ul(interactionList)}`
-}
-
 function createCompanyMap(company) {
     // Check to see if either the latitude or longitude is "Unknown" and if so return false
     if (company.latitude === 'Unknown' || company.longitude === 'Unknown') {

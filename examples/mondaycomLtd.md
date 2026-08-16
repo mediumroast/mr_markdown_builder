@@ -27,7 +27,7 @@
 ## Interactions
 `monday.com Ltd.` has `10` interactions in the repository, and the reading time for all interactions is `32` minutes.
 
-###  [A Guide To Business Process Management Software](/Interactions/A%20Guide%20To%20Business%20Process%20Management%20Software.pdf) 
+###  [A Guide To Business Process Management Software](https://monday.com/blog/work-management/business-process-management-software/) 
 
 
 ![Reading%20time](https://img.shields.io/badge/Reading%20time-2%20minutes-blue?style=for-the-badge)&nbsp;![Interaction%20type](https://img.shields.io/badge/Interaction%20type-Blog%20Post-blue?style=for-the-badge)&nbsp;![Page%20count](https://img.shields.io/badge/Page%20count-6-blue?style=for-the-badge)&nbsp;![Document%20type](https://img.shields.io/badge/Document%20type-application%2Fpdf-blue?style=for-the-badge)
@@ -49,7 +49,7 @@ Business process management is the practice of documenting, analyzing, and impro
 
 
 
-###  [As principais dicas para freelancers começarem 2024 com o pé direito – e sem ciladas - ISTOÉ DINHEIRO](/Interactions/As%20principais%20dicas%20para%20freelancers%20comec%CC%A7arem%202024%20com%20o%20pe%CC%81%20direito%20%E2%80%93%20e%20sem%20ciladas%20-%20ISTOE%CC%81%20DINHEIRO.pdf) 
+###  [As principais dicas para freelancers começarem 2024 com o pé direito – e sem ciladas - ISTOÉ DINHEIRO](https://istoedinheiro.com.br/as-principais-dicas-para-freelancers-comecarem-2024-com-o-pe-direito-e-sem-ciladas/) 
 
 
 ![Reading%20time](https://img.shields.io/badge/Reading%20time-3%20minutes-blue?style=for-the-badge)&nbsp;![Interaction%20type](https://img.shields.io/badge/Interaction%20type-Webpage-blue?style=for-the-badge)&nbsp;![Page%20count](https://img.shields.io/badge/Page%20count-4-blue?style=for-the-badge)&nbsp;![Document%20type](https://img.shields.io/badge/Document%20type-application%2Fpdf-blue?style=for-the-badge)
@@ -71,7 +71,7 @@ As principais dicas para freelancers are: Comecarem 2024 com o pe direito, cilad
 
 
 
-###  [Customer story: Coles 360 | monday.com](/Interactions/Customer%20story:%20Coles%20360%20%7C%20monday.com.pdf) 
+###  [Customer story: Coles 360 | monday.com](https://monday.com/customers/coles-360) 
 
 
 ![Reading%20time](https://img.shields.io/badge/Reading%20time-5%20minutes-blue?style=for-the-badge)&nbsp;![Interaction%20type](https://img.shields.io/badge/Interaction%20type-Case%20Study-blue?style=for-the-badge)&nbsp;![Page%20count](https://img.shields.io/badge/Page%20count-17-blue?style=for-the-badge)&nbsp;![Document%20type](https://img.shields.io/badge/Document%20type-application%2Fpdf-blue?style=for-the-badge)
@@ -93,7 +93,7 @@ Monday.com is an enterprise-grade system used by coles360 to manage omnichannel 
 
 
 
-###  [Going public? Here’s how to execute a successful IPO  - Raconteur](/Interactions/Going%20public?%20Here%E2%80%99s%20how%20to%20execute%20a%20successful%20IPO%C2%A0%20-%20Raconteur.pdf) 
+###  [Going public? Here’s how to execute a successful IPO  - Raconteur](https://www.raconteur.net/finance/going-public-heres-how-to-execute-a-successful-ipo) 
 
 
 ![Reading%20time](https://img.shields.io/badge/Reading%20time-0%20minutes-blue?style=for-the-badge)&nbsp;![Interaction%20type](https://img.shields.io/badge/Interaction%20type-Webpage-blue?style=for-the-badge)&nbsp;![Page%20count](https://img.shields.io/badge/Page%20count-Unknown-blue?style=for-the-badge)&nbsp;![Document%20type](https://img.shields.io/badge/Document%20type-text%2Fplain%3B%20charset%3DISO-8859-1-blue?style=for-the-badge)
@@ -115,7 +115,7 @@ is unable to contact the person it is looking for. The error message is not foun
 
 
 
-###  [How A.I. Assistants Could Supercharge Workplace Software | Inc.com](/Interactions/How%20A.I.%20Assistants%20Could%20Supercharge%20Workplace%20Software%20%7C%20Inc.com.pdf) 
+###  [How A.I. Assistants Could Supercharge Workplace Software | Inc.com](https://www.inc.com/ben-sherry/how-ai-assistants-could-supercharge-workplace-software.html) 
 
 
 ![Reading%20time](https://img.shields.io/badge/Reading%20time-8%20minutes-blue?style=for-the-badge)&nbsp;![Interaction%20type](https://img.shields.io/badge/Interaction%20type-Webpage-blue?style=for-the-badge)&nbsp;![Page%20count](https://img.shields.io/badge/Page%20count-4-blue?style=for-the-badge)&nbsp;![Document%20type](https://img.shields.io/badge/Document%20type-application%2Fpdf-blue?style=for-the-badge)
@@ -137,7 +137,7 @@ Software companies from Monday.com to microsoft expect a.i.assistants to make it
 
 
 
-###  [Monday.com launches a developer team workflow management tool - SiliconANGLE](/Interactions/Monday.com%20launches%20a%20developer%20team%20workflow%20management%20tool%20-%20SiliconANGLE.pdf) 
+###  [Monday.com launches a developer team workflow management tool - SiliconANGLE](https://siliconangle.com/2023/05/31/monday-com-launches-developer-team-workflow-management-tool/) 
 
 
 ![Reading%20time](https://img.shields.io/badge/Reading%20time-3%20minutes-blue?style=for-the-badge)&nbsp;![Interaction%20type](https://img.shields.io/badge/Interaction%20type-Webpage-blue?style=for-the-badge)&nbsp;![Page%20count](https://img.shields.io/badge/Page%20count-4-blue?style=for-the-badge)&nbsp;![Document%20type](https://img.shields.io/badge/Document%20type-application%2Fpdf-blue?style=for-the-badge)
@@ -159,7 +159,7 @@ monday.com launches a developer team workflow management tool - silicon angle. M
 
 
 
-###  [New monday.com data infrastructure to speed platform performance – Computerworld](/Interactions/New%20monday.com%20data%20infrastructure%20to%20speed%20platform%20performance%20%E2%80%93%20Computerworld.pdf) 
+###  [New monday.com data infrastructure to speed platform performance – Computerworld](https://www.computerworld.com/article/1631996/new-mondaycom-data-infrastructure-to-speed-platform-performance.html) 
 
 
 ![Reading%20time](https://img.shields.io/badge/Reading%20time-2%20minutes-blue?style=for-the-badge)&nbsp;![Interaction%20type](https://img.shields.io/badge/Interaction%20type-Webpage-blue?style=for-the-badge)&nbsp;![Page%20count](https://img.shields.io/badge/Page%20count-3-blue?style=for-the-badge)&nbsp;![Document%20type](https://img.shields.io/badge/Document%20type-application%2Fpdf-blue?style=for-the-badge)
@@ -181,7 +181,7 @@ monday.com has announced the initial rollout of its new monday db data infrastru
 
 
 
-###  [With apps for forms and whiteboards, Monday.com is building a suite - Fast Company](/Interactions/With%20apps%20for%20forms%20and%20whiteboards,%20Monday.com%20is%20building%20a%20suite%20-%20Fast%20Company.pdf) 
+###  [With apps for forms and whiteboards, Monday.com is building a suite - Fast Company](https://www.fastcompany.com/90724310/monday-com-workforms-canvas) 
 
 
 ![Reading%20time](https://img.shields.io/badge/Reading%20time-4%20minutes-blue?style=for-the-badge)&nbsp;![Interaction%20type](https://img.shields.io/badge/Interaction%20type-Webpage-blue?style=for-the-badge)&nbsp;![Page%20count](https://img.shields.io/badge/Page%20count-6-blue?style=for-the-badge)&nbsp;![Document%20type](https://img.shields.io/badge/Document%20type-application%2Fpdf-blue?style=for-the-badge)
@@ -203,7 +203,7 @@ monday.com has just launched a new form-building app called workforms and a coll
 
 
 
-###  [monday.com appoints its first CPTO to stimulate product innovation -](/Interactions/monday.com%20appoints%20its%20first%20CPTO%20to%20stimulate%20product%20innovation%20-.pdf) 
+###  [monday.com appoints its first CPTO to stimulate product innovation -](https://ir.monday.com/news-and-events/news-releases/news-details/2023/monday.com-Appoints-its-First-CPTO-to-Accelerate-the-Next-Age-of-Innovation/default.aspx) 
 
 
 ![Reading%20time](https://img.shields.io/badge/Reading%20time-2%20minutes-blue?style=for-the-badge)&nbsp;![Interaction%20type](https://img.shields.io/badge/Interaction%20type-Press%20Release-blue?style=for-the-badge)&nbsp;![Page%20count](https://img.shields.io/badge/Page%20count-2-blue?style=for-the-badge)&nbsp;![Document%20type](https://img.shields.io/badge/Document%20type-application%2Fpdf-blue?style=for-the-badge)
@@ -225,7 +225,7 @@ monday.com appoints its first cpto to stimulate product innovation. Daniel lerey
 
 
 
-###  [mondayDB 1.0’s re-engineered infrastructure dramatically improves performance speed, scalability, and flexibility](/Interactions/mondayDB%201.0%E2%80%99s%20re-engineered%20infrastructure%20dramatically%20improves%20performance%20speed,%20scalability,%20and%20flexibility.pdf) 
+###  [mondayDB 1.0’s re-engineered infrastructure dramatically improves performance speed, scalability, and flexibility](https://ir.monday.com/news-and-events/news-releases/news-details/2023/monday.com-Enhances-Core-Data-Infrastructure-with-mondayDB/default.aspx) 
 
 
 ![Reading%20time](https://img.shields.io/badge/Reading%20time-3%20minutes-blue?style=for-the-badge)&nbsp;![Interaction%20type](https://img.shields.io/badge/Interaction%20type-Press%20Release-blue?style=for-the-badge)&nbsp;![Page%20count](https://img.shields.io/badge/Page%20count-3-blue?style=for-the-badge)&nbsp;![Document%20type](https://img.shields.io/badge/Document%20type-application%2Fpdf-blue?style=for-the-badge)

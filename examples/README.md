@@ -3,7 +3,9 @@
 ---
 
 # Introduction
-There are currently `5` companies in the repository. The table below lists all available companies and some of their firmographics. Click on the company name to view the company's profile.  Below the table is a map of all companies in the repository.  Click on a company's marker to view additional company information in context.
+For a plain, self-contained tour of every function the module exports, see the generated [Feature Showcase](./FeatureShowcase.md) — produced by running `node examples/feature-showcase.js`, which regenerates it straight from `src/`.
+
+The rest of this page is a more elaborate real-world example: there are currently `5` companies in the repository. The table below lists all available companies and some of their firmographics. Click on the company name to view the company's profile.  Below the table is a map of all companies in the repository.  Click on a company's marker to view additional company information in context.
 # Table of Companies
  | Company Name | Company Type | Company Role | Company Region | 
  |  ---  |  ---  |  ---  |  ---  | 

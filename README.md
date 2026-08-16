@@ -120,5 +120,7 @@ markdown.quote('Line 1\nLine 2')
 </details>
 
 # Examples
-You can check out [./examples/README.md](./examples/README.md) for an example of the module in action, which is created via the test script [./examples/index.js](./examples/index.js), including the related modules, within the [examples](./examples) directory.  
+For a quick tour of every function the module exports, see the generated [Feature Showcase](./examples/FeatureShowcase.md), produced by running `node examples/feature-showcase.js`.
+
+For a more elaborate real-world example, check out [./examples/README.md](./examples/README.md), which is created via the script [./examples/index.js](./examples/index.js), including the related modules, within the [examples](./examples) directory.  
 

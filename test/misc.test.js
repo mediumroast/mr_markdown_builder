@@ -14,6 +14,18 @@ const {
   leftArrow,
   space,
   cr,
+  br,
+  comment,
+  ins,
+  sub,
+  sup,
+  mention,
+  issueRef,
+  emoji,
+  colorSwatch,
+  namedAnchor,
+  mathInline,
+  mathBlock,
 } = require('../src/index')
 
 describe('misc', () => {
@@ -80,5 +92,47 @@ describe('misc', () => {
     expect(leftArrow()).toBe('&#8592;')
     expect(space()).toBe('&nbsp;')
     expect(cr()).toBe('\n')
+  })
+
+  test('br forces a hard line break (two trailing spaces plus a newline)', () => {
+    expect(br()).toBe('  \n')
+  })
+
+  test('comment renders a hidden HTML comment', () => {
+    expect(comment('hidden note')).toBe('<!-- hidden note -->')
+  })
+
+  test('ins, sub, and sup wrap text in their HTML tags', () => {
+    expect(ins('underlined')).toBe('<ins>underlined</ins>')
+    expect(sub('subscript')).toBe('<sub>subscript</sub>')
+    expect(sup('superscript')).toBe('<sup>superscript</sup>')
+  })
+
+  test('mention prefixes a name with @', () => {
+    expect(mention('octocat')).toBe('@octocat')
+  })
+
+  test('issueRef prefixes a number with #', () => {
+    expect(issueRef(42)).toBe('#42')
+  })
+
+  test('emoji wraps a shortcode in colons', () => {
+    expect(emoji('tada')).toBe(':tada:')
+  })
+
+  test('colorSwatch wraps a color value in backticks', () => {
+    expect(colorSwatch('#FF5733')).toBe('`#FF5733`')
+  })
+
+  test('namedAnchor renders an HTML anchor with a name attribute', () => {
+    expect(namedAnchor('my-anchor')).toBe('<a name="my-anchor"></a>')
+  })
+
+  test('mathInline wraps an expression in single dollar signs', () => {
+    expect(mathInline('E=mc^2')).toBe('$E=mc^2$')
+  })
+
+  test('mathBlock wraps an expression in double dollar signs on their own lines', () => {
+    expect(mathBlock('E=mc^2')).toBe('$$\nE=mc^2\n$$')
   })
 })

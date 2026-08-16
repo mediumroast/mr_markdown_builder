@@ -39,7 +39,7 @@ const EXAMPLES = [
     file: 'LinksAndMedia.md',
     script: 'links-and-media.js',
     title: 'Links, Images & Miscellaneous',
-    description: 'Links, images, anchors, quotes, badges, tags, and collapsible sections.',
+    description: 'Links, images, anchors, quotes, badges, tags, collapsible sections, underline/sub/superscript, hard breaks, mentions, issue refs, emoji, color swatches, math, and comments.',
   },
   {
     file: 'GeoblocksExample.md',

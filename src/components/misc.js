@@ -3,7 +3,18 @@
  */
 
 const { withPrefix, surround } = require('../util/helpers')
-const {HORIZONTAL_RULE, SECTION_LINE_BREAK, QUOTE} = require('../util/constants')
+const {
+  HORIZONTAL_RULE,
+  SECTION_LINE_BREAK,
+  QUOTE,
+  LINE_BREAK,
+  INLINE_CODE,
+  MENTION_PREFIX,
+  ISSUE_REF_PREFIX,
+  EMOJI_DELIMITER,
+  MATH_INLINE_DELIMITER,
+  MATH_BLOCK_DELIMITER
+} = require('../util/constants')
 
 const hr = () => surround(SECTION_LINE_BREAK, HORIZONTAL_RULE)
 
@@ -76,20 +87,62 @@ const space = () => '&nbsp;'
 // Create a carriage return function
 const cr = () => '\n'
 
-module.exports = { 
-  hr, 
-  collapsible, 
-  anchor, 
-  link, 
-  image, 
-  quote, 
+// Force a hard line break within a paragraph (two trailing spaces + a newline)
+const br = () => LINE_BREAK + SECTION_LINE_BREAK
+
+// Hide content from the rendered output
+const comment = (text) => `<!-- ${text} -->`
+
+// Underline, subscript, and superscript have no dedicated markdown syntax; GitHub renders these HTML tags instead
+const ins = (text) => `<ins>${text}</ins>`
+const sub = (text) => `<sub>${text}</sub>`
+const sup = (text) => `<sup>${text}</sup>`
+
+// Mention a user or team
+const mention = (name) => `${MENTION_PREFIX}${name}`
+
+// Reference an issue or pull request by number
+const issueRef = (num) => `${ISSUE_REF_PREFIX}${num}`
+
+// Render an emoji shortcode
+const emoji = (name) => surround(EMOJI_DELIMITER, name)
+
+// Render a color value GitHub will show a swatch for (hex, rgb, or hsl)
+const colorSwatch = (color) => surround(INLINE_CODE, color)
+
+// Create a manually-named anchor to link to, independent of any heading
+const namedAnchor = (name) => `<a name="${name}"></a>`
+
+// Render inline and block mathematical expressions (LaTeX)
+const mathInline = (expr) => surround(MATH_INLINE_DELIMITER, expr)
+const mathBlock = (expr) => `${MATH_BLOCK_DELIMITER}\n${expr}\n${MATH_BLOCK_DELIMITER}`
+
+module.exports = {
+  hr,
+  collapsible,
+  anchor,
+  link,
+  image,
+  quote,
   badge,
-  tag, 
+  tag,
   imageWithSize,
   upArrow,
   downArrow,
   rightArrow,
   leftArrow,
   space,
-  cr
+  cr,
+  br,
+  comment,
+  ins,
+  sub,
+  sup,
+  mention,
+  issueRef,
+  emoji,
+  colorSwatch,
+  namedAnchor,
+  mathInline,
+  mathBlock
 }

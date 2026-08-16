@@ -110,6 +110,30 @@ markdown.hr()
 // Quote (each line of a multi-line string is prefixed)
 markdown.quote('A quote')
 markdown.quote('Line 1\nLine 2')
+
+// Named anchor, independent of any heading
+markdown.namedAnchor('my-anchor') // <a name="my-anchor"></a>
+
+// Underline, subscript, superscript (GFM has no dedicated syntax, so these render as HTML)
+markdown.ins('underlined')
+markdown.sub('subscript')
+markdown.sup('superscript')
+
+// Force a hard line break within a paragraph
+markdown.br()
+
+// GitHub shorthand
+markdown.mention('octocat') // @octocat
+markdown.issueRef(42) // #42
+markdown.emoji('tada') // :tada:
+markdown.colorSwatch('#1d9bf0') // `#1d9bf0` — GitHub renders a swatch next to a valid hex/rgb/hsl value
+
+// Math (LaTeX)
+markdown.mathInline('E = mc^2') // $E = mc^2$
+markdown.mathBlock('E = mc^2') // $$\nE = mc^2\n$$
+
+// Hide content in the rendered output
+markdown.comment('not visible when rendered')
 ```
 
 **Collapsible**:
@@ -130,7 +154,7 @@ Individually:
 - [Headers & Emphasis](./examples/HeadersAndEmphasis.md) (`node examples/headers-and-emphasis.js`)
 - [Lists](./examples/ListsExample.md) — ordered, unordered, and task lists, including checked task items (`node examples/lists-example.js`)
 - [Tables](./examples/TablesExample.md) — with and without column alignment (`node examples/tables-example.js`)
-- [Links, Images & Miscellaneous](./examples/LinksAndMedia.md) (`node examples/links-and-media.js`)
+- [Links, Images & Miscellaneous](./examples/LinksAndMedia.md) — links, images, anchors, quotes, badges, underline/sub/superscript, hard breaks, mentions, issue refs, emoji, color swatches, math, and comments (`node examples/links-and-media.js`)
 - [GeoJSON & TopoJSON](./examples/GeoblocksExample.md) (`node examples/geoblocks-example.js`)
 - [Company Directory](./examples/README.md) — a more elaborate, real-world example built from JSON company/interaction data (`node examples/index.js`)
 

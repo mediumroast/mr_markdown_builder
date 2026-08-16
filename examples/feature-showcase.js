@@ -75,6 +75,18 @@ doc += markdown.h3('Collapsible section')
 doc += markdown.collapsible('Click to expand', 'Hidden content lives here.')
 doc += markdown.h3('Arrows and whitespace helpers')
 doc += `${markdown.upArrow()} ${markdown.downArrow()} ${markdown.leftArrow()} ${markdown.rightArrow()}${markdown.space()}(space helper before this text)${markdown.cr()}`
+doc += markdown.h3('Text-level HTML: ins, sub, sup, and a hard break via br()')
+doc += `${markdown.ins('underlined')} ${markdown.sub('sub')} ${markdown.sup('sup')}${markdown.br()}`
+doc += 'This line follows a hard break.\n'
+doc += markdown.h3('GitHub shorthand: mention, issueRef, emoji, colorSwatch')
+doc += `${markdown.mention('octocat')} ${markdown.issueRef(42)} ${markdown.emoji('tada')} ${markdown.colorSwatch('#1d9bf0')}\n`
+doc += markdown.h3('Math: mathInline and mathBlock')
+doc += `${markdown.mathInline('E = mc^2')}\n`
+doc += markdown.mathBlock('\\sum_{i=1}^{n} i = \\frac{n(n+1)}{2}') + '\n'
+doc += markdown.h3('comment (renders nothing visible)')
+doc += markdown.comment('This is only visible in the raw markdown source.') + '\n'
+doc += markdown.h3('namedAnchor (a manual, non-heading anchor point)')
+doc += markdown.namedAnchor('showcase-anchor') + `Linkable via ${markdown.link('#showcase-anchor', '#showcase-anchor')}\n`
 
 doc += markdown.h2('GeoJSON / TopoJSON code blocks')
 doc += markdown.geojson({

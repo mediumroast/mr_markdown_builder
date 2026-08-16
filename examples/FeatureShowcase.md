@@ -84,6 +84,25 @@ Hidden content lives here.
 ### Arrows and whitespace helpers
 &#8593; &#8595; &#8592; &#8594;&nbsp;(space helper before this text)
 
+### Text-level HTML: ins, sub, sup, and a hard break via br()
+<ins>underlined</ins> <sub>sub</sub> <sup>sup</sup>  
+This line follows a hard break.
+
+### GitHub shorthand: mention, issueRef, emoji, colorSwatch
+@octocat #42 :tada: `#1d9bf0`
+
+### Math: mathInline and mathBlock
+$E = mc^2$
+$$
+\sum_{i=1}^{n} i = \frac{n(n+1)}{2}
+$$
+
+### comment (renders nothing visible)
+<!-- This is only visible in the raw markdown source. -->
+
+### namedAnchor (a manual, non-heading anchor point)
+<a name="showcase-anchor"></a>Linkable via  [#showcase-anchor](#showcase-anchor) 
+
 ## GeoJSON / TopoJSON code blocks
 ```geojson
 {
